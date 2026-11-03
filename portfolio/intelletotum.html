@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IntelleTotum — Manassés Marcelino</title>
+  <meta name="description" content="Estudo de caso: IntelleTotum, análise investigativa de dados de comunicação com cinco visões analíticas.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="wrap">
+      <a href="index.html" class="logo">Manassés Marcelino<span>.</span></a>
+      <div class="nav-links">
+        <a href="index.html#trabalhos" class="hide-m">← Trabalhos</a>
+        <a href="index.html#contato" class="btn btn-acido btn-sm">Vamos conversar ↗</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="case-hero">
+    <div class="wrap">
+      <span class="label" style="color: var(--violeta)">Estudo de caso · Análise de dados</span>
+      <h1>IntelleTotum</h1>
+      <p class="sub">Transformar milhares de registros de comunicação em pistas claras para quem investiga.</p>
+      <dl class="ficha">
+        <div><dt>Meu papel</dt><dd>UX/UI Design (estágio)</dd></div>
+        <div><dt>Empresa</dt><dd>Dígitro Tecnologia · 2026</dd></div>
+        <div><dt>Plataforma</dt><dd>Web desktop</dd></div>
+        <div><dt>Entregas</dt><dd>Wireframes, 5 visões, componentes</dd></div>
+      </dl>
+    </div>
+  </header>
+
+  <div class="wrap">
+    <div class="capa capa-it capa-case">
+      <div class="laptop"><div class="tela"><img src="assets/it-tempo.webp" alt="Visão de tempo com mapa de calor"></div><div class="base"></div></div>
+      <div class="janela"><div class="barra"><i></i><i></i><i></i></div><img src="assets/it-participantes.webp" alt="Visão de participantes"></div>
+    </div>
+    <p class="legenda">Visões de tempo e de participantes.</p>
+    <p class="aviso">Todos os dados exibidos nas telas são fictícios.</p>
+  </div>
+
+  <section class="bloco">
+    <div class="wrap">
+      <span class="label" style="color: var(--violeta)">O problema</span>
+      <h2>Milhares de linhas, nenhuma resposta óbvia.</h2>
+      <p class="lead">Analistas de investigação e auditoria lidam com grandes volumes de chamadas, mensagens, logs de conexão e acessos à rede. Examinar tudo isso em planilhas e relatórios extensos é lento, e o que importa (um padrão, um contato frequente, uma conexão escondida) se perde no meio.</p>
+      <div class="grade g3">
+        <div class="card"><h3>Padrões de atividade</h3><p>Frequência de comunicação, horários recorrentes e picos de tráfego.</p></div>
+        <div class="card"><h3>Contatos frequentes</h3><p>Os nós principais de uma rede de relacionamentos e interações.</p></div>
+        <div class="card"><h3>Conexões ocultas</h3><p>Vínculos entre contas diferentes que usam o mesmo IP ou estão no mesmo lugar.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bloco escuro">
+    <div class="wrap">
+      <span class="label" style="color: var(--acido)">Estrutura</span>
+      <h2>Um resumo fixo e cinco jeitos de olhar os dados.</h2>
+      <p class="lead">O topo da tela mantém sempre os seis números que dão contexto ao conjunto: mensagens, enviadas e recebidas, interlocutores, chamadas, hora e dia de maior volume. Abaixo, o analista alterna entre cinco visões sem perder os filtros aplicados.</p>
+      <div class="grade g3">
+        <div class="card"><span class="n">01 · Tempo</span><h3>Quando acontece</h3><p>Mapa de calor de dia da semana por hora, distribuição temporal e divisão por tipo.</p></div>
+        <div class="card"><span class="n">02 · Chamadas</span><h3>Como se fala</h3><p>Volume, duração e tipos de chamada.</p></div>
+        <div class="card"><span class="n">03 · Participantes</span><h3>Quem fala com quem</h3><p>Interlocutores, grupos, pares de troca e um diagrama de conexões em comum.</p></div>
+        <div class="card"><span class="n">04 · Rede</span><h3>De onde vem</h3><p>Origem de rede (IP e provedor) e localização de origem.</p></div>
+        <div class="card"><span class="n">05 · Coincidências</span><h3>O que se cruza</h3><p>Contas no mesmo IP no mesmo período, locais compartilhados e faixas do dia.</p></div>
+        <div class="card"><span class="n">Sempre à mão</span><h3>Filtros e detalhes</h3><p>Filtros gerais, específicos e por imagem na lateral, com painéis de detalhes e subconjunto.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bloco">
+    <div class="wrap">
+      <span class="label" style="color: var(--violeta)">Visão de tempo</span>
+      <h2>O pico salta aos olhos.</h2>
+      <p class="lead">O mapa de calor cruza dia da semana e hora, com a intensidade de cor proporcional ao volume e o pico destacado em texto ("Sáb às 01h · 160 mensagens"). Assim o padrão aparece em segundos, e o número exato continua lá pra quem precisar.</p>
+      <div class="case-img" style="margin-top: 40px"><img src="assets/it-tempo.webp" alt="Visão de tempo com mapa de calor, distribuição temporal e tipos"></div>
+    </div>
+  </section>
+
+  <section class="bloco" style="padding-top: 0">
+    <div class="wrap">
+      <div class="grade g2" style="margin-top: 0">
+        <div>
+          <span class="label" style="color: var(--violeta)">Participantes</span>
+          <h2 style="font-size: 30px">Quem fala com quem.</h2>
+          <p class="lead" style="font-size: 17px; margin-bottom: 20px">As contas investigadas ganham a marcação ALVO, e o diagrama de conexões em comum mostra visualmente quem liga duas contas.</p>
+          <div class="case-img"><img src="assets/it-participantes.webp" alt="Visão de participantes com diagrama de conexões"></div>
+        </div>
+        <div>
+          <span class="label" style="color: var(--violeta)">Coincidências</span>
+          <h2 style="font-size: 30px">O que se cruza.</h2>
+          <p class="lead" style="font-size: 17px; margin-bottom: 20px">Pares de contas que usaram o mesmo endereço IP, os locais que elas compartilham e em que faixas do dia isso acontece.</p>
+          <div class="case-img"><img src="assets/it-coincidencias.webp" alt="Visão de coincidências de rede e locais"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bloco violeta">
+    <div class="wrap">
+      <span class="label" style="color: var(--acido)">Decisões de design</span>
+      <h2>Um padrão de widget que serve pra tudo.</h2>
+      <p class="lead">Com dezenas de gráficos e tabelas, a consistência é o que deixa a ferramenta aprendível. Todo widget segue as mesmas regras.</p>
+      <div class="grade g4">
+        <div class="card"><h3>Gráfico ou lista</h3><p>Alterna entre colunas, rosca e lista: o gráfico mostra o padrão e a lista dá a precisão.</p></div>
+        <div class="card"><h3>Tela cheia</h3><p>Todo widget abre num modal estendido pra análise detalhada.</p></div>
+        <div class="card"><h3>Exportar</h3><p>Cada bloco pode ser exportado pro relatório da investigação.</p></div>
+        <div class="card"><h3>Número com contexto</h3><p>Nenhum dado aparece sozinho: "4.073 / 5.860" vem com "41,0% enviadas" e uma barra.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bloco">
+    <div class="wrap">
+      <span class="label" style="color: var(--violeta)">Rede</span>
+      <h2>Do resumo ao detalhe, sem trocar de tela.</h2>
+      <p class="lead">A visão de rede lista a origem das conexões e a localização, e os modais estendidos abrem a lista completa de cada grupo por cima da tela.</p>
+      <div class="case-img" style="margin-top: 40px"><img src="assets/it-rede.webp" alt="Visão de rede com modais estendidos"></div>
+    </div>
+  </section>
+
+  <section class="bloco" style="background: var(--lilas)">
+    <div class="wrap">
+      <span class="label" style="color: var(--violeta)">Processo</span>
+      <h2>Da baixa fidelidade ao desenvolvimento.</h2>
+      <div class="grade g4">
+        <div class="card"><span class="n">01</span><h3>Wireframes</h3><p>Estrutura de cada visão em baixa fidelidade, pra validar o que mostrar antes de como mostrar.</p></div>
+        <div class="card"><span class="n">02</span><h3>Protótipos e testes</h3><p>As cinco visões em alta fidelidade, testadas com tarefas reais de análise, como achar o horário de pico ou o contato mais frequente.</p></div>
+        <div class="card"><span class="n">03</span><h3>Componentes</h3><p>Widgets, tabelas, gráficos e tags reutilizáveis.</p></div>
+        <div class="card"><span class="n">04</span><h3>Desenvolvimento</h3><p>Página de handoff com especificações para engenharia.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bloco">
+    <div class="wrap">
+      <span class="label" style="color: var(--violeta)">O que eu aprendi</span>
+      <h2>Dashboard bom responde perguntas.</h2>
+      <div class="grade g3">
+        <div class="card" style="background: var(--papel)"><h3>KPI precisa de contexto</h3><p>Número sozinho não diz nada. Aprendi a sempre mostrar o dado com proporção, comparação ou destaque do que importa.</p></div>
+        <div class="card" style="background: var(--papel)"><h3>Cada pergunta, um gráfico</h3><p>"Quando" pede mapa de calor, "quem" pede diagrama de conexões. Escolher a visualização certa é metade do trabalho.</p></div>
+        <div class="card" style="background: var(--papel)"><h3>Padrão segura a escala</h3><p>Com dezenas de widgets, um comportamento único pra todos é o que deixa a ferramenta fácil de aprender.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="figma-cta">
+    <div class="wrap">
+      <div>
+        <span class="label" style="color: var(--violeta)">Arquivo original</span>
+        <h3>Quer ver o processo completo?</h3>
+        <p>Telas, fluxos, estados de erro, design system e handoff, do jeito que foram entregues.</p>
+      </div>
+      <a href="https://www.figma.com/design/xrPhdqRSbyQAan5fYvLBAw/IntelleTotum-D%C3%ADgitro---Analise-de-Dados" class="btn btn-tinta" target="_blank" rel="noopener">Abrir no Figma ↗</a>
+    </div>
+  </section>
+
+  <div class="prox-case">
+    <p>Próximo projeto</p>
+    <a href="bora.html" class="grande">BORA! →</a>
+  </div>
+
+  <footer>
+    <div class="wrap">
+      <span>© 2026 Manassés Marcelino</span>
+      <a href="index.html#contato">Vamos conversar ↗</a>
+    </div>
+  </footer>
+
+</body>
+</html>
