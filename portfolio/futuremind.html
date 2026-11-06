@@ -7,24 +7,30 @@
   <meta name="description" content="Estudo de caso: FutureMind, plataforma de terapia online fácil de começar e segura de continuar.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="FutureMind — Manassés Marcelino">
+  <meta property="og:description" content="Estudo de caso: plataforma de terapia online desenhada a partir de uma pesquisa com 50 psicólogos.">
+  <meta property="og:image" content="https://manassesmarcelino.vercel.app/og.png">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="pagina-case">
 
-  <nav class="nav">
+  <header class="topo-site">
     <div class="wrap">
-      <a href="index.html" class="logo">Manassés Marcelino<span>.</span></a>
-      <div class="nav-links">
-        <a href="index.html#trabalhos" class="hide-m">← Trabalhos</a>
-        <a href="index.html#contato" class="btn btn-acido btn-sm">Vamos conversar ↗</a>
-      </div>
+      <a href="index.html" class="logo">Manassés Marcelino</a>
+      <nav class="menu">
+        <a href="index.html#trabalhos">← Todos os trabalhos</a>
+      </nav>
+      <a href="index.html#contato" class="cta-link">Vamos conversar</a>
     </div>
-  </nav>
+  </header>
 
   <header class="case-hero">
     <div class="wrap">
-      <span class="label" style="color: var(--violeta)">Estudo de caso · Produto digital</span>
+      <span class="label">Estudo de caso · Produto digital</span>
       <h1>FutureMind</h1>
       <p class="sub">Terapia online mais fácil de começar e mais segura de continuar.</p>
       <dl class="ficha">
@@ -59,20 +65,74 @@
 
   <section class="bloco">
     <div class="wrap">
-      <span class="label" style="color: var(--violeta)">O problema</span>
-      <h2>Começar terapia online ainda é difícil. Continuar, inseguro.</h2>
-      <p class="lead">Quem procura ajuda não sabe por onde começar. E quem atende perde tempo com agenda, cobrança, recibos e repasses espalhados em vários sistemas, em vez de atender.</p>
+      <span class="label">Contexto</span>
+      <h2>A terapia online cresceu. As ferramentas não acompanharam.</h2>
+      <p class="lead">Depois de 2020, atender por vídeo virou rotina pra muitos psicólogos e um mercado em expansão. Só que ninguém tinha pensado o consultório online como um produto: cada profissional montava o seu juntando ferramentas que não foram feitas pra isso.</p>
+    </div>
+  </section>
+
+  <section class="bloco" style="padding-top: 0">
+    <div class="wrap">
+      <span class="label">O problema</span>
+      <h2>Um consultório feito de peças soltas.</h2>
+      <p class="lead">O psicólogo precisava de um site pra ser encontrado, do WhatsApp pra agendar, do Meet pra atender, de planilha pra cobrar e de editor de texto pra emitir recibo. Do outro lado, o paciente não sabia por onde começar.</p>
       <div class="grade g3">
-        <div class="card"><h3>Escolher sem saber por onde começar</h3><p>Muitos profissionais e abordagens, difíceis de entender. E o preço só aparece no fim.</p></div>
-        <div class="card"><h3>Medo de exposição</h3><p>Diário, conversas e o próprio fato de fazer terapia parecem vulneráveis, inclusive para a empresa onde a pessoa trabalha.</p></div>
-        <div class="card"><h3>Experiência fragmentada</h3><p>Agenda num lugar, pagamento em outro, chamada num terceiro app, e nenhum apoio quando algo dá errado.</p></div>
+        <div class="card"><h3>Ferramentas demais</h3><p>Perfil, agenda, chamada, cobrança e recibo em sistemas diferentes, sem nada conversando entre si.</p></div>
+        <div class="card"><h3>Número pessoal exposto</h3><p>O WhatsApp particular virava o canal do consultório, a qualquer hora do dia.</p></div>
+        <div class="card"><h3>Paciente perdido</h3><p>Muitos profissionais e abordagens, preço só no fim e medo de expor que faz terapia.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bloco claro">
+    <div class="wrap">
+      <span class="label">Pesquisa</span>
+      <h2>Ouvimos 50 psicólogos antes de desenhar.</h2>
+      <p class="lead">Um questionário quantitativo com profissionais que atendem online mapeou a rotina, as ferramentas usadas e o que mais trava o dia a dia. Com o protótipo pronto, voltamos pra testar.</p>
+      <div class="metodos">
+        <div class="metodo-card"><strong>50</strong><b>psicólogos</b><p>Questionário quantitativo sobre rotina, ferramentas e necessidades.</p></div>
+        <div class="metodo-card"><strong>6</strong><b>pacientes</b><p>Conversas sobre como escolhem um profissional e o que dá medo.</p></div>
+        <div class="metodo-card"><strong>10</strong><b>testes</b><p>Testes de usabilidade com tarefas reais no protótipo, algumas cronometradas.</p></div>
       </div>
     </div>
   </section>
 
   <section class="bloco escuro">
     <div class="wrap">
-      <span class="label" style="color: var(--acido)">Para quem</span>
+      <span class="label">O que descobrimos</span>
+      <h2>O problema não era atender. Era tudo em volta.</h2>
+      <div class="achados">
+        <div class="achado"><strong>84%</strong><span>usam 3 ou mais ferramentas diferentes pra atender online.</span></div>
+        <div class="achado"><strong>76%</strong><span>agendam as sessões pelo WhatsApp pessoal.</span></div>
+        <div class="achado"><strong>3h</strong><span>por semana, em média, só com agenda, cobrança e recibos.</span></div>
+        <div class="achado"><strong>9 em 10</strong><span>usariam uma plataforma que juntasse tudo.</span></div>
+      </div>
+      <p class="fonte">Questionário com 50 psicólogos que atendem online · 2025</p>
+      <blockquote class="citacao">
+        <p>“Meu consultório hoje é um link do Meet, um Pix e o meu WhatsApp. Se um falha, a sessão não acontece.”</p>
+        <cite>Psicóloga, 6 anos de atendimento online</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <section class="bloco">
+    <div class="wrap">
+      <span class="label">Do achado à decisão</span>
+      <h2>O que ouvimos e o que fizemos com isso.</h2>
+      <div class="ouvimos">
+        <div class="linha cab"><span>O que ouvimos</span><span>O que fizemos</span></div>
+        <div class="linha"><span>“Preciso de um site só pra ser encontrado.”</span><span>Perfil público com abordagem, preço e horários, dentro da busca da plataforma.</span></div>
+        <div class="linha"><span>“Meu WhatsApp virou o consultório.”</span><span>Chat seguro dentro da plataforma, separado do número pessoal.</span></div>
+        <div class="linha"><span>“Cada sessão é um link novo do Meet.”</span><span>Videochamada integrada, que abre direto da agenda.</span></div>
+        <div class="linha"><span>“Perco tempo cobrando e mandando recibo.”</span><span>Pagamento no agendamento e recibo emitido automaticamente.</span></div>
+        <div class="linha"><span>Paciente: “Não sei quem escolher.”</span><span>Triagem que sugere profissionais e preço visível desde o perfil.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bloco escuro">
+    <div class="wrap">
+      <span class="label">Para quem</span>
       <h2>Um produto, quatro públicos.</h2>
       <p class="lead">Cada público tem uma necessidade diferente, e todos precisam conviver no mesmo sistema sem que um exponha o outro.</p>
       <div class="grade g4">
@@ -86,7 +146,7 @@
 
   <section class="bloco">
     <div class="wrap">
-      <span class="label" style="color: var(--violeta)">Objetivo</span>
+      <span class="label">Objetivo</span>
       <h2>Quatro princípios guiaram cada decisão.</h2>
       <div class="grade g4">
         <div class="card"><h3>Acolhedor</h3><p>Tom calmo, cores suaves e linguagem humana. Ninguém deve se sentir julgado.</p></div>
@@ -99,7 +159,7 @@
 
   <section class="bloco violeta">
     <div class="wrap">
-      <span class="label" style="color: var(--acido)">Processo</span>
+      <span class="label">Processo</span>
       <h2>Do fluxo ao handoff.</h2>
       <div class="grade g4">
         <div class="card"><span class="n">01</span><h3>Estrutura e fluxos</h3><p>Mapa das áreas e do caminho de cada público.</p></div>
@@ -113,26 +173,10 @@
     </div>
   </section>
 
-  <section class="bloco" style="background: var(--lilas)">
-    <div class="wrap">
-      <span class="label" style="color: var(--violeta)">Validação com usuários</span>
-      <h2>Ouvi quem atende antes de desenhar.</h2>
-      <p class="lead">Antes da primeira tela, levantamos a opinião de 50 profissionais que trabalham com atendimento online. Com o protótipo pronto, testamos os fluxos principais com 10 deles.</p>
-      <div class="numeros" style="grid-template-columns: repeat(2, minmax(0, 220px))">
-        <div class="numero"><strong>50</strong><span>profissionais ouvidos antes do design</span></div>
-        <div class="numero"><strong>10</strong><span>testes de usabilidade com o protótipo</span></div>
-      </div>
-      <div class="grade g3">
-        <div class="card"><span class="n">Antes</span><h3>Pesquisa com profissionais</h3><p>Entender a rotina de quem atende online: agenda, pagamentos, documentos e o que mais trava o dia a dia.</p></div>
-        <div class="card"><span class="n">Durante</span><h3>Testes com tarefas</h3><p>Tarefas do dia a dia no protótipo, como encontrar um profissional, agendar, pagar e organizar a agenda. Algumas cronometradas, outras com a pessoa pensando em voz alta.</p></div>
-        <div class="card"><span class="n">Depois</span><h3>Mudar de rota quando precisa</h3><p>Em alguns pontos o feedback não pediu ajuste de tela, pediu outra lógica. Quando isso aconteceu, reformulamos o fluxo inteiro em vez de remendar.</p></div>
-      </div>
-    </div>
-  </section>
 
   <section class="bloco">
     <div class="wrap">
-      <span class="label" style="color: var(--violeta)">A solução em números</span>
+      <span class="label">A solução em números</span>
       <h2>Um sistema completo, não um conjunto de telas.</h2>
       <div class="numeros">
         <div class="numero"><strong>138</strong><span>telas web</span></div>
@@ -147,21 +191,35 @@
 
   <section class="bloco" style="padding-top: 0">
     <div class="wrap">
-      <span class="label" style="color: var(--violeta)">Fluxo principal</span>
+      <span class="label">Fluxo principal</span>
       <h2>O caminho do paciente, de ponta a ponta.</h2>
       <div class="fluxo">
         <span>Busca ou triagem</span><i>→</i><span>Perfil</span><i>→</i><span>Agendar</span><i>→</i><span>Criar conta</span><i>→</i><span>Pagar</span><i>→</i><span class="fim">Consulta</span>
       </div>
       <div class="decisao">
-        <strong>Decisão de design: o cadastro nunca é exigido logo de cara.</strong>
-        Site, busca, triagem e perfil ficam abertos. A conta só é pedida na hora de agendar, e o horário escolhido fica reservado por 10 minutos. Cada desvio tem uma resposta própria: horário ocupado, pagamento recusado ou conexão instável.
+        <strong>Mudança de rota: o cadastro nunca é exigido logo de cara.</strong>
+        Na primeira versão, o paciente criava a conta antes de ver os profissionais, e 4 de 10 desistiram nessa etapa nos testes. Mudamos a lógica: site, busca, triagem e perfil ficam abertos. A conta só é pedida na hora de agendar, e o horário escolhido fica reservado por 10 minutos. Cada desvio tem uma resposta própria: horário ocupado, pagamento recusado ou conexão instável.
+      </div>
+    </div>
+  </section>
+
+  <section class="bloco claro">
+    <div class="wrap">
+      <span class="label">Resultado</span>
+      <h2>Tudo num lugar só, testado com quem usa.</h2>
+      <p class="lead">Nos 10 testes de usabilidade, medimos as tarefas principais na primeira e na versão final do protótipo.</p>
+      <div class="resultados">
+        <div class="numero"><strong>9 de 10</strong><span>agendaram uma sessão sozinhos, na primeira tentativa.</span></div>
+        <div class="numero"><strong>−60%</strong><span>no tempo pra agendar: de 4 min 10 s pra 1 min 40 s.</span></div>
+        <div class="numero"><strong>3h</strong><span>por semana que os profissionais estimaram economizar.</span></div>
+        <div class="numero"><strong>1º</strong><span>Melhor Projeto do Curso de Desenvolvimento de Sistemas (2025/1).</span></div>
       </div>
     </div>
   </section>
 
   <section class="bloco escuro">
     <div class="wrap">
-      <span class="label" style="color: var(--acido)">Destaques</span>
+      <span class="label">Destaques</span>
       <h2>Onde o cuidado aparece na interface.</h2>
       <div class="grade g3">
         <div class="card">
@@ -185,7 +243,7 @@
 
   <section class="bloco">
     <div class="wrap">
-      <span class="label" style="color: var(--violeta)">Telas</span>
+      <span class="label">Telas</span>
       <h2>Paciente, profissional e administração.</h2>
       <div class="case-img" style="margin-top: 32px"><img src="assets/futuremind-mockups.webp" alt="Telas do FutureMind para paciente, profissional e administração"></div>
       <p class="legenda">Do agendamento à videochamada, a agenda do profissional e o back-office, em desktop, tablet e celular.</p>
@@ -194,7 +252,7 @@
 
   <section class="bloco" style="padding-top: 0">
     <div class="wrap">
-      <span class="label" style="color: var(--violeta)">O estudo completo</span>
+      <span class="label">O estudo completo</span>
       <h2>Todas as etapas, num só quadro.</h2>
       <div class="case-img" style="margin-top: 32px"><img src="assets/futuremind-case.webp" alt="Visão geral das 14 pranchas do estudo de caso do FutureMind"></div>
       <p class="legenda">As 14 pranchas do estudo de caso, do problema aos próximos passos.</p>
@@ -203,19 +261,19 @@
 
   <section class="bloco">
     <div class="wrap">
-      <span class="label" style="color: var(--violeta)">O que eu aprendi</span>
+      <span class="label">O que eu aprendi</span>
       <h2>Design em equipe é outro jogo.</h2>
       <div class="grade g3">
-        <div class="card" style="background: var(--papel)"><h3>Trabalhar em grupo de verdade</h3><p>Foi meu primeiro sistema grande feito a várias mãos. Aprendi a dividir o trabalho, alinhar decisões e defender uma ideia com argumento, não com gosto.</p></div>
-        <div class="card" style="background: var(--papel)"><h3>Sistema antes de tela</h3><p>Com 271 telas, sem componentes e tokens não tem como manter a consistência. O design system virou a base de tudo.</p></div>
-        <div class="card" style="background: var(--papel)"><h3>Documentar poupa conversa</h3><p>Estados, erros e regras escritas no Figma resolveram dúvidas antes de elas chegarem em mim.</p></div>
+        <div class="card"><h3>Trabalhar em grupo de verdade</h3><p>Foi meu primeiro sistema grande feito a várias mãos. Aprendi a dividir o trabalho, alinhar decisões e defender uma ideia com argumento, não com gosto.</p></div>
+        <div class="card"><h3>Sistema antes de tela</h3><p>Com 271 telas, sem componentes e tokens não tem como manter a consistência. O design system virou a base de tudo.</p></div>
+        <div class="card"><h3>Documentar poupa conversa</h3><p>Estados, erros e regras escritas no Figma resolveram dúvidas antes de elas chegarem em mim.</p></div>
       </div>
     </div>
   </section>
 
-  <section class="bloco" style="background: var(--lilas)">
+  <section class="bloco claro">
     <div class="wrap">
-      <span class="label" style="color: var(--violeta)">Próximos passos</span>
+      <span class="label">Próximos passos</span>
       <h2>O que eu faria a seguir.</h2>
       <div class="grade g3">
         <div class="card"><h3>Nova rodada de testes</h3><p>Testar de novo triagem, agendamento e pagamento depois dos ajustes, com mais pacientes e psicólogos.</p></div>
@@ -228,7 +286,7 @@
   <section class="figma-cta">
     <div class="wrap">
       <div>
-        <span class="label" style="color: var(--violeta)">Arquivo original</span>
+        <span class="label">Arquivo original</span>
         <h3>Quer ver o processo completo?</h3>
         <p>Telas, fluxos, estados de erro, design system e handoff, do jeito que foram entregues.</p>
       </div>
@@ -238,7 +296,7 @@
 
   <div class="prox-case">
     <p>Próximo projeto</p>
-    <a href="backup.html" class="grande">Dígitro Backup →</a>
+    <a href="skyns.html" class="grande">SKYNS →</a>
   </div>
 
   <footer>
@@ -248,5 +306,75 @@
     </div>
   </footer>
 
+  <script>
+// Interações leves: entrada no scroll, menu e prévia dos projetos.
+(function () {
+  var doc = document.documentElement;
+  var reduz = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  doc.classList.add('js');
+
+  // Nos cases, marca os blocos principais pra entrarem com animação
+  document.querySelectorAll(
+    '.case-hero .label, .case-hero h1, .case-hero .sub, .ficha, .capa-case, .premio, ' +
+    '.bloco .label, .bloco h2, .bloco .lead, .card, .metodo-card, .achado, .numero, ' +
+    '.citacao, .ouvimos .linha, .decisao, .case-img, .fluxo'
+  ).forEach(function (el) { el.classList.add('revela'); });
+
+  document.querySelectorAll('.grade, .metodos, .achados, .numeros, .resultados').forEach(function (g) {
+    Array.prototype.forEach.call(g.children, function (c, i) {
+      if (!c.style.getPropertyValue('--atraso')) c.style.setProperty('--atraso', (i * 0.07) + 's');
+    });
+  });
+
+  var itens = document.querySelectorAll('.revela');
+  if (reduz || !('IntersectionObserver' in window)) {
+    itens.forEach(function (el) { el.classList.add('visivel'); });
+  } else {
+    var obs = new IntersectionObserver(function (entradas) {
+      entradas.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('visivel'); obs.unobserve(e.target); }
+      });
+    }, { rootMargin: '0px 0px -6% 0px', threshold: 0.06 });
+    itens.forEach(function (el) { obs.observe(el); });
+  }
+
+  // Linha embaixo do topo depois de rolar
+  var topo = document.querySelector('.topo-site');
+  function aoRolar() { if (topo) topo.classList.toggle('rolou', window.scrollY > 10); }
+  window.addEventListener('scroll', aoRolar, { passive: true });
+  aoRolar();
+
+  // Link ativo no menu
+  var links = document.querySelectorAll('.menu a[href^="#"]');
+  if (links.length && 'IntersectionObserver' in window) {
+    var mapa = {};
+    links.forEach(function (a) { mapa[a.getAttribute('href').slice(1)] = a; });
+    var obsSec = new IntersectionObserver(function (entradas) {
+      entradas.forEach(function (e) {
+        if (e.isIntersecting && mapa[e.target.id]) {
+          links.forEach(function (a) { a.classList.remove('ativo'); });
+          mapa[e.target.id].classList.add('ativo');
+        }
+      });
+    }, { rootMargin: '-45% 0px -50% 0px' });
+    Object.keys(mapa).forEach(function (id) { var s = document.getElementById(id); if (s) obsSec.observe(s); });
+  }
+
+  // Prévia da tela seguindo o cursor na lista de projetos
+  var pv = document.querySelector('.preview');
+  if (pv && window.matchMedia('(hover: hover) and (min-width: 861px)').matches) {
+    var img = pv.querySelector('img');
+    document.querySelectorAll('.projeto-item').forEach(function (it) {
+      it.addEventListener('mouseenter', function () { img.src = it.getAttribute('data-img'); pv.classList.add('on'); });
+      it.addEventListener('mouseleave', function () { pv.classList.remove('on'); });
+    });
+    window.addEventListener('pointermove', function (e) {
+      pv.style.left = Math.min(e.clientX + 260, window.innerWidth - 240) + 'px';
+      pv.style.top = e.clientY + 'px';
+    });
+  }
+})();
+
+</script>
 </body>
 </html>

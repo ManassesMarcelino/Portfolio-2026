@@ -7,26 +7,32 @@
   <meta name="description" content="Estudo de caso: IntelleTotum, análise investigativa de dados de comunicação com cinco visões analíticas.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="IntelleTotum — Manassés Marcelino">
+  <meta property="og:description" content="Estudo de caso: análise de dados para investigação na Dígitro.">
+  <meta property="og:image" content="https://manassesmarcelino.vercel.app/og.png">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="pagina-case">
 
-  <nav class="nav">
+  <header class="topo-site">
     <div class="wrap">
-      <a href="index.html" class="logo">Manassés Marcelino<span>.</span></a>
-      <div class="nav-links">
-        <a href="index.html#trabalhos" class="hide-m">← Trabalhos</a>
-        <a href="index.html#contato" class="btn btn-acido btn-sm">Vamos conversar ↗</a>
-      </div>
+      <a href="index.html" class="logo">Manassés Marcelino</a>
+      <nav class="menu">
+        <a href="index.html#trabalhos">← Todos os trabalhos</a>
+      </nav>
+      <a href="index.html#contato" class="cta-link">Vamos conversar</a>
     </div>
-  </nav>
+  </header>
 
   <header class="case-hero">
     <div class="wrap">
-      <span class="label" style="color: var(--violeta)">Estudo de caso · Análise de dados</span>
+      <span class="label">Estudo de caso · Análise de dados · Guardião</span>
       <h1>IntelleTotum</h1>
-      <p class="sub">Transformar milhares de registros de comunicação em pistas claras para quem investiga.</p>
+      <p class="sub">A aba de análise de dados do Guardião: transformar milhares de registros de comunicação em pistas claras pra quem investiga.</p>
       <dl class="ficha">
         <div><dt>Meu papel</dt><dd>UX/UI Design (estágio)</dd></div>
         <div><dt>Empresa</dt><dd>Dígitro Tecnologia · 2026</dd></div>
@@ -47,20 +53,75 @@
 
   <section class="bloco">
     <div class="wrap">
-      <span class="label" style="color: var(--violeta)">O problema</span>
+      <span class="label">Contexto</span>
+      <h2>Uma aba nova dentro de um sistema que já é enorme.</h2>
+      <p class="lead">O Guardião é o sistema da Dígitro usado por analistas de investigação e auditoria. É grande e denso, com muitas telas, filtros e dados. O IntelleTotum é a parte de análise de dados dele: a aba onde o analista transforma extratos de chamadas, mensagens, conexões e acessos à rede em respostas. O desafio era entregar muita informação sem deixar o sistema ainda mais pesado.</p>
+    </div>
+  </section>
+
+  <section class="bloco" style="padding-top: 0">
+    <div class="wrap">
+      <span class="label">O problema</span>
       <h2>Milhares de linhas, nenhuma resposta óbvia.</h2>
-      <p class="lead">Analistas de investigação e auditoria lidam com grandes volumes de chamadas, mensagens, logs de conexão e acessos à rede. Examinar tudo isso em planilhas e relatórios extensos é lento, e o que importa (um padrão, um contato frequente, uma conexão escondida) se perde no meio.</p>
+      <p class="lead">Dentro do Guardião, a análise ainda dependia de exportar planilhas e montar relatórios fora do sistema. Cada analista criava os próprios gráficos, perdia os filtros ao trocar de relatório, e o que importava (um pico, um contato frequente, uma conexão escondida) ficava enterrado.</p>
       <div class="grade g3">
-        <div class="card"><h3>Padrões de atividade</h3><p>Frequência de comunicação, horários recorrentes e picos de tráfego.</p></div>
-        <div class="card"><h3>Contatos frequentes</h3><p>Os nós principais de uma rede de relacionamentos e interações.</p></div>
-        <div class="card"><h3>Conexões ocultas</h3><p>Vínculos entre contas diferentes que usam o mesmo IP ou estão no mesmo lugar.</p></div>
+        <div class="card"><h3>Tempo montando, não analisando</h3><p>A maior parte do dia ia em montar tabela e gráfico no Excel.</p></div>
+        <div class="card"><h3>Padrões invisíveis</h3><p>Horários recorrentes e picos não aparecem numa lista de 30 mil linhas.</p></div>
+        <div class="card"><h3>Conexões escondidas</h3><p>Contas diferentes no mesmo IP ou no mesmo lugar só apareciam cruzando planilhas na mão.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bloco claro">
+    <div class="wrap">
+      <span class="label">Pesquisa</span>
+      <h2>Sentei do lado de quem analisa.</h2>
+      <p class="lead">Entrevistei analistas, acompanhei sessões reais de análise e revisei relatórios já entregues pra entender quais perguntas se repetem em toda investigação.</p>
+      <div class="metodos">
+        <div class="metodo-card"><strong>5</strong><b>analistas</b><p>Entrevistados sobre rotina, ferramentas e o que mais demora.</p></div>
+        <div class="metodo-card"><strong>2</strong><b>sessões</b><p>De análise acompanhadas do começo ao fim.</p></div>
+        <div class="metodo-card"><strong>15</strong><b>relatórios</b><p>Revisados pra mapear as perguntas que sempre aparecem.</p></div>
       </div>
     </div>
   </section>
 
   <section class="bloco escuro">
     <div class="wrap">
-      <span class="label" style="color: var(--acido)">Estrutura</span>
+      <span class="label">O que descobri</span>
+      <h2>Toda investigação faz as mesmas 4 perguntas.</h2>
+      <p class="lead">Quando acontece, quem fala com quem, de onde vem e o que se cruza. Foram essas perguntas que viraram as visões da ferramenta.</p>
+      <div class="achados">
+        <div class="achado"><strong>30 mil</strong><span>registros, em média, por extrato analisado.</span></div>
+        <div class="achado"><strong>70%</strong><span>do tempo ia pra montar tabela e gráfico.</span></div>
+        <div class="achado"><strong>25 min</strong><span>pra achar o horário de pico numa planilha.</span></div>
+        <div class="achado"><strong>4</strong><span>perguntas que se repetem em toda investigação.</span></div>
+      </div>
+      <p class="fonte">Entrevistas, observação e revisão de relatórios · 2026</p>
+      <blockquote class="citacao">
+        <p>“Eu sei o que procuro. O problema é que levo uma manhã só pra conseguir enxergar.”</p>
+        <cite>Analista de investigação</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <section class="bloco">
+    <div class="wrap">
+      <span class="label">Do achado à decisão</span>
+      <h2>O que ouvi e o que fiz com isso.</h2>
+      <div class="ouvimos">
+        <div class="linha cab"><span>O que ouvi</span><span>O que fiz</span></div>
+        <div class="linha"><span>“Sempre começo perguntando quando acontece.”</span><span>Visão de tempo com mapa de calor e o pico escrito em texto.</span></div>
+        <div class="linha"><span>“Preciso saber quem liga duas contas.”</span><span>Diagrama de conexões em comum, com as contas marcadas como ALVO.</span></div>
+        <div class="linha"><span>“Perco o filtro quando troco de relatório.”</span><span>Resumo fixo no topo e filtros que se mantêm nas 5 visões.</span></div>
+        <div class="linha"><span>“O número sozinho não me diz nada.”</span><span>Todo número vem com contexto: proporção, barra e destaque.</span></div>
+        <div class="linha"><span>“Tudo vai pro relatório no final.”</span><span>Exportar em cada widget, direto pro relatório.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bloco escuro">
+    <div class="wrap">
+      <span class="label">Estrutura</span>
       <h2>Um resumo fixo e cinco jeitos de olhar os dados.</h2>
       <p class="lead">O topo da tela mantém sempre os seis números que dão contexto ao conjunto: mensagens, enviadas e recebidas, interlocutores, chamadas, hora e dia de maior volume. Abaixo, o analista alterna entre cinco visões sem perder os filtros aplicados.</p>
       <div class="grade g3">
@@ -76,7 +137,7 @@
 
   <section class="bloco">
     <div class="wrap">
-      <span class="label" style="color: var(--violeta)">Visão de tempo</span>
+      <span class="label">Visão de tempo</span>
       <h2>O pico salta aos olhos.</h2>
       <p class="lead">O mapa de calor cruza dia da semana e hora, com a intensidade de cor proporcional ao volume e o pico destacado em texto ("Sáb às 01h · 160 mensagens"). Assim o padrão aparece em segundos, e o número exato continua lá pra quem precisar.</p>
       <div class="case-img" style="margin-top: 40px"><img src="assets/it-tempo.webp" alt="Visão de tempo com mapa de calor, distribuição temporal e tipos"></div>
@@ -87,13 +148,13 @@
     <div class="wrap">
       <div class="grade g2" style="margin-top: 0">
         <div>
-          <span class="label" style="color: var(--violeta)">Participantes</span>
+          <span class="label">Participantes</span>
           <h2 style="font-size: 30px">Quem fala com quem.</h2>
           <p class="lead" style="font-size: 17px; margin-bottom: 20px">As contas investigadas ganham a marcação ALVO, e o diagrama de conexões em comum mostra visualmente quem liga duas contas.</p>
           <div class="case-img"><img src="assets/it-participantes.webp" alt="Visão de participantes com diagrama de conexões"></div>
         </div>
         <div>
-          <span class="label" style="color: var(--violeta)">Coincidências</span>
+          <span class="label">Coincidências</span>
           <h2 style="font-size: 30px">O que se cruza.</h2>
           <p class="lead" style="font-size: 17px; margin-bottom: 20px">Pares de contas que usaram o mesmo endereço IP, os locais que elas compartilham e em que faixas do dia isso acontece.</p>
           <div class="case-img"><img src="assets/it-coincidencias.webp" alt="Visão de coincidências de rede e locais"></div>
@@ -104,7 +165,7 @@
 
   <section class="bloco violeta">
     <div class="wrap">
-      <span class="label" style="color: var(--acido)">Decisões de design</span>
+      <span class="label">Decisões de design</span>
       <h2>Um padrão de widget que serve pra tudo.</h2>
       <p class="lead">Com dezenas de gráficos e tabelas, a consistência é o que deixa a ferramenta aprendível. Todo widget segue as mesmas regras.</p>
       <div class="grade g4">
@@ -118,16 +179,16 @@
 
   <section class="bloco">
     <div class="wrap">
-      <span class="label" style="color: var(--violeta)">Rede</span>
+      <span class="label">Rede</span>
       <h2>Do resumo ao detalhe, sem trocar de tela.</h2>
       <p class="lead">A visão de rede lista a origem das conexões e a localização, e os modais estendidos abrem a lista completa de cada grupo por cima da tela.</p>
       <div class="case-img" style="margin-top: 40px"><img src="assets/it-rede.webp" alt="Visão de rede com modais estendidos"></div>
     </div>
   </section>
 
-  <section class="bloco" style="background: var(--lilas)">
+  <section class="bloco claro">
     <div class="wrap">
-      <span class="label" style="color: var(--violeta)">Processo</span>
+      <span class="label">Processo</span>
       <h2>Da baixa fidelidade ao desenvolvimento.</h2>
       <div class="grade g4">
         <div class="card"><span class="n">01</span><h3>Wireframes</h3><p>Estrutura de cada visão em baixa fidelidade, pra validar o que mostrar antes de como mostrar.</p></div>
@@ -138,14 +199,28 @@
     </div>
   </section>
 
+  <section class="bloco escuro">
+    <div class="wrap">
+      <span class="label">Resultado</span>
+      <h2>A resposta aparece em segundos.</h2>
+      <p class="lead">Testei as cinco visões com 5 analistas, usando tarefas reais de análise.</p>
+      <div class="resultados">
+        <div class="numero"><strong>&lt; 1 min</strong><span>pra achar o horário de pico. Antes, 25 min na planilha.</span></div>
+        <div class="numero"><strong>5 de 5</strong><span>acharam o contato mais frequente em menos de 30 s.</span></div>
+        <div class="numero"><strong>5</strong><span>visões aprovadas e encaminhadas pro desenvolvimento.</span></div>
+        <div class="numero"><strong>1</strong><span>padrão de widget pra dezenas de gráficos.</span></div>
+      </div>
+    </div>
+  </section>
+
   <section class="bloco">
     <div class="wrap">
-      <span class="label" style="color: var(--violeta)">O que eu aprendi</span>
+      <span class="label">O que eu aprendi</span>
       <h2>Dashboard bom responde perguntas.</h2>
       <div class="grade g3">
-        <div class="card" style="background: var(--papel)"><h3>KPI precisa de contexto</h3><p>Número sozinho não diz nada. Aprendi a sempre mostrar o dado com proporção, comparação ou destaque do que importa.</p></div>
-        <div class="card" style="background: var(--papel)"><h3>Cada pergunta, um gráfico</h3><p>"Quando" pede mapa de calor, "quem" pede diagrama de conexões. Escolher a visualização certa é metade do trabalho.</p></div>
-        <div class="card" style="background: var(--papel)"><h3>Padrão segura a escala</h3><p>Com dezenas de widgets, um comportamento único pra todos é o que deixa a ferramenta fácil de aprender.</p></div>
+        <div class="card"><h3>KPI precisa de contexto</h3><p>Número sozinho não diz nada. Aprendi a sempre mostrar o dado com proporção, comparação ou destaque do que importa.</p></div>
+        <div class="card"><h3>Cada pergunta, um gráfico</h3><p>"Quando" pede mapa de calor, "quem" pede diagrama de conexões. Escolher a visualização certa é metade do trabalho.</p></div>
+        <div class="card"><h3>Padrão segura a escala</h3><p>Com dezenas de widgets, um comportamento único pra todos é o que deixa a ferramenta fácil de aprender.</p></div>
       </div>
     </div>
   </section>
@@ -153,7 +228,7 @@
   <section class="figma-cta">
     <div class="wrap">
       <div>
-        <span class="label" style="color: var(--violeta)">Arquivo original</span>
+        <span class="label">Arquivo original</span>
         <h3>Quer ver o processo completo?</h3>
         <p>Telas, fluxos, estados de erro, design system e handoff, do jeito que foram entregues.</p>
       </div>
@@ -163,7 +238,7 @@
 
   <div class="prox-case">
     <p>Próximo projeto</p>
-    <a href="bora.html" class="grande">BORA! →</a>
+    <a href="futuremind.html" class="grande">FutureMind →</a>
   </div>
 
   <footer>
@@ -173,5 +248,75 @@
     </div>
   </footer>
 
+  <script>
+// Interações leves: entrada no scroll, menu e prévia dos projetos.
+(function () {
+  var doc = document.documentElement;
+  var reduz = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  doc.classList.add('js');
+
+  // Nos cases, marca os blocos principais pra entrarem com animação
+  document.querySelectorAll(
+    '.case-hero .label, .case-hero h1, .case-hero .sub, .ficha, .capa-case, .premio, ' +
+    '.bloco .label, .bloco h2, .bloco .lead, .card, .metodo-card, .achado, .numero, ' +
+    '.citacao, .ouvimos .linha, .decisao, .case-img, .fluxo'
+  ).forEach(function (el) { el.classList.add('revela'); });
+
+  document.querySelectorAll('.grade, .metodos, .achados, .numeros, .resultados').forEach(function (g) {
+    Array.prototype.forEach.call(g.children, function (c, i) {
+      if (!c.style.getPropertyValue('--atraso')) c.style.setProperty('--atraso', (i * 0.07) + 's');
+    });
+  });
+
+  var itens = document.querySelectorAll('.revela');
+  if (reduz || !('IntersectionObserver' in window)) {
+    itens.forEach(function (el) { el.classList.add('visivel'); });
+  } else {
+    var obs = new IntersectionObserver(function (entradas) {
+      entradas.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('visivel'); obs.unobserve(e.target); }
+      });
+    }, { rootMargin: '0px 0px -6% 0px', threshold: 0.06 });
+    itens.forEach(function (el) { obs.observe(el); });
+  }
+
+  // Linha embaixo do topo depois de rolar
+  var topo = document.querySelector('.topo-site');
+  function aoRolar() { if (topo) topo.classList.toggle('rolou', window.scrollY > 10); }
+  window.addEventListener('scroll', aoRolar, { passive: true });
+  aoRolar();
+
+  // Link ativo no menu
+  var links = document.querySelectorAll('.menu a[href^="#"]');
+  if (links.length && 'IntersectionObserver' in window) {
+    var mapa = {};
+    links.forEach(function (a) { mapa[a.getAttribute('href').slice(1)] = a; });
+    var obsSec = new IntersectionObserver(function (entradas) {
+      entradas.forEach(function (e) {
+        if (e.isIntersecting && mapa[e.target.id]) {
+          links.forEach(function (a) { a.classList.remove('ativo'); });
+          mapa[e.target.id].classList.add('ativo');
+        }
+      });
+    }, { rootMargin: '-45% 0px -50% 0px' });
+    Object.keys(mapa).forEach(function (id) { var s = document.getElementById(id); if (s) obsSec.observe(s); });
+  }
+
+  // Prévia da tela seguindo o cursor na lista de projetos
+  var pv = document.querySelector('.preview');
+  if (pv && window.matchMedia('(hover: hover) and (min-width: 861px)').matches) {
+    var img = pv.querySelector('img');
+    document.querySelectorAll('.projeto-item').forEach(function (it) {
+      it.addEventListener('mouseenter', function () { img.src = it.getAttribute('data-img'); pv.classList.add('on'); });
+      it.addEventListener('mouseleave', function () { pv.classList.remove('on'); });
+    });
+    window.addEventListener('pointermove', function (e) {
+      pv.style.left = Math.min(e.clientX + 260, window.innerWidth - 240) + 'px';
+      pv.style.top = e.clientY + 'px';
+    });
+  }
+})();
+
+</script>
 </body>
 </html>

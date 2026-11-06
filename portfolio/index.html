@@ -4,256 +4,197 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Manassés Marcelino — UX/UI Designer</title>
-  <meta name="description" content="Portfólio de Manassés Marcelino, UX/UI Designer em Florianópolis. Produtos digitais, design systems e identidade visual.">
+  <meta name="description" content="Portfólio de Manassés Marcelino, UX/UI Designer em Florianópolis. Produtos digitais, pesquisa, design systems e sistemas complexos.">
+  <meta name="theme-color" content="#F2F1EC">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Manassés Marcelino — UX/UI Designer">
+  <meta property="og:description" content="Portfólio de Manassés Marcelino, UX/UI Designer em Florianópolis.">
+  <meta property="og:image" content="https://manassesmarcelino.vercel.app/og.png">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <nav class="nav">
+  <header class="topo-site">
     <div class="wrap">
-      <a href="#" class="logo">Manassés Marcelino<span>.</span></a>
-      <div class="nav-links">
-        <a href="#trabalhos" class="hide-m">Trabalhos</a>
-        <a href="#faco" class="hide-m">O que faço</a>
-        <a href="#processo" class="hide-m">Processo</a>
-        <a href="#sobre" class="hide-m">Sobre</a>
-        <a href="#contato" class="btn btn-acido btn-sm">Vamos conversar ↗</a>
-      </div>
-    </div>
-  </nav>
-
-  <header class="hero">
-    <div class="orbita"></div>
-    <div class="nucleo"></div>
-    <div class="bolha-coral"></div>
-    <div class="wrap">
-      <span class="label">Portfólio · UX/UI Designer · Florianópolis, SC</span>
-      <h1>Oi, sou o Manassés. <em>Bora</em> ver o que eu desenho?</h1>
-      <p>Organizo ideias soltas em produtos digitais claros: fluxos, telas e design systems que fazem sentido pra quem usa e chegam redondos pra quem vai construir.</p>
-      <div class="acoes">
-        <a href="#trabalhos" class="btn btn-acido">Ver trabalhos ↓</a>
-        <a href="curriculo.pdf" class="btn btn-ghost" target="_blank" rel="noopener">Baixar currículo</a>
-      </div>
+      <a href="#inicio" class="logo">Manassés Marcelino</a>
+      <nav class="menu">
+        <a href="#trabalhos">Trabalhos</a>
+        <a href="#processo">Processo</a>
+        <a href="#sobre">Sobre</a>
+      </nav>
+      <a href="#contato" class="cta-link">Vamos conversar</a>
     </div>
   </header>
 
-  <div class="fatos">
-    <div class="wrap">
-      <div class="fato"><strong>Design desde 2024</strong><span>Sistemas corporativos, produtos e marcas</span></div>
-      <div class="fato"><strong>Design System</strong><span>Componentes, tokens e ícones</span></div>
-      <div class="fato"><strong>Base técnica</strong><span>Entendo como a tela vira produto</span></div>
-      <div class="fato"><strong>Projeto premiado</strong><span>FutureMind · SENAI/SC 2025</span></div>
-    </div>
-  </div>
-
-  <section id="trabalhos">
-    <div class="wrap">
-      <div class="sec-head">
-        <div>
-          <span class="label" style="color: var(--violeta)">Trabalhos selecionados</span>
-          <h2>Do problema ao handoff.</h2>
+  <main id="inicio">
+    <section class="abertura">
+      <div class="wrap">
+        <div class="abertura-linha revela"><span>UX/UI Designer</span><span>Florianópolis · 2026</span></div>
+        <h1 class="nome-gigante revela"><span>Manassés</span><span>Marcelino<i>.</i></span></h1>
+        <div class="abertura-pe">
+          <div class="revela"><strong>Do problema à tela.</strong><p>Pesquiso, organizo fluxos e desenho interfaces que fazem sentido pra quem usa.</p></div>
+          <div class="revela" style="--atraso: .08s"><strong>Agora</strong><p>UX/UI na Dígitro, em sistemas de investigação e de backup.</p></div>
+          <div class="revela" style="--atraso: .16s"><strong>Disponível</strong><p>Para vagas de UX/UI Designer júnior.</p></div>
         </div>
-        <p>Quatro projetos que mostram lados diferentes do meu trabalho: produto digital de ponta a ponta, dois sistemas corporativos complexos e identidade de marca.</p>
       </div>
+    </section>
 
-      <div class="projetos">
-        <a href="futuremind.html" class="projeto">
-          <div class="projeto-img">
-            <div class="capa capa-fm">
-              <img class="capa-note" src="assets/fm-notebook.webp" alt="FutureMind no notebook">
-              <img class="capa-cel" src="assets/fm-celular.webp" alt="FutureMind no celular">
-            </div>
-          </div>
-          <div class="projeto-info">
-            <span class="selo">Melhor projeto do curso · SENAI/SC</span>
+    <section id="trabalhos" class="secao">
+      <div class="wrap">
+        <div class="secao-titulo revela"><h2>Trabalhos selecionados</h2><span>04 projetos</span></div>
+        <div class="lista-projetos">
+          <a class="projeto-item revela" href="futuremind.html" data-img="assets/futuremind-mockups.webp">
+            <span class="n">01</span>
             <h3>FutureMind</h3>
-            <p>Plataforma de terapia online pensada pra ser fácil de começar e segura de continuar. 271 telas, 97 componentes e handoff completo.</p>
-            <span class="ver">Ver estudo de caso →</span>
-            <div class="tags"><span class="tag">Produto digital</span><span class="tag">UX/UI</span><span class="tag">Design System</span><span class="tag">Prototipação</span></div>
-          </div>
-        </a>
-
-        <a href="backup.html" class="projeto">
-          <div class="projeto-img">
-            <div class="capa capa-bk">
-              <div class="laptop"><div class="tela"><img src="assets/bk-dashboard.webp" alt="Dashboard do Dígitro Backup"></div><div class="base"></div></div>
-              <div class="janela"><div class="barra"><i></i><i></i><i></i></div><img src="assets/bk-agendamento.webp" alt="Configuração de agendamento de backup"></div>
-            </div>
-          </div>
-          <div class="projeto-info">
-            <span class="selo" style="background: var(--ceu)">Dígitro Tecnologia</span>
+            <p>Terapia online desenhada a partir de uma pesquisa com 50 psicólogos. Melhor projeto do curso.</p>
+            <span class="ano">2025</span>
+            <img class="thumb" src="assets/futuremind-mockups.webp" alt="" loading="lazy">
+          </a>
+          <a class="projeto-item revela" href="skyns.html" data-img="assets/sk-inicio.webp">
+            <span class="n">02</span>
+            <h3>SKYNS</h3>
+            <p>E-commerce de skincare personalizável, com uma máquina de IoT que prepara a fórmula.</p>
+            <span class="ano">2025</span>
+            <img class="thumb" src="assets/sk-inicio.webp" alt="" loading="lazy">
+          </a>
+          <a class="projeto-item revela" href="backup.html" data-img="assets/bk-dashboard.webp">
+            <span class="n">03</span>
             <h3>Dígitro Backup</h3>
-            <p>Um produto, três módulos e três públicos: a gestão da Dígitro, o painel do cliente e o agente que roda no servidor local. Com foco em alertas claros e cenários de erro.</p>
-            <span class="ver">Ver estudo de caso →</span>
-            <div class="tags"><span class="tag">B2B</span><span class="tag">Dashboard</span><span class="tag">Cenários de erro</span><span class="tag">Segurança</span></div>
-          </div>
-        </a>
-
-        <a href="intelletotum.html" class="projeto">
-          <div class="projeto-img">
-            <div class="capa capa-it">
-              <div class="laptop"><div class="tela"><img src="assets/it-tempo.webp" alt="Visão de tempo do IntelleTotum"></div><div class="base"></div></div>
-              <div class="janela"><div class="barra"><i></i><i></i><i></i></div><img src="assets/it-participantes.webp" alt="Visão de participantes do IntelleTotum"></div>
-            </div>
-          </div>
-          <div class="projeto-info">
-            <span class="selo" style="background: var(--lilas)">Dígitro Tecnologia</span>
+            <p>Dashboard B2B com alertas no topo e erros que dizem o que fazer.</p>
+            <span class="ano">2026</span>
+            <img class="thumb" src="assets/bk-dashboard.webp" alt="" loading="lazy">
+          </a>
+          <a class="projeto-item revela" href="intelletotum.html" data-img="assets/it-tempo.webp">
+            <span class="n">04</span>
             <h3>IntelleTotum</h3>
-            <p>Ferramenta de análise investigativa que transforma milhares de registros de comunicação em padrões, conexões e pistas. Cinco visões analíticas num só painel.</p>
-            <span class="ver">Ver estudo de caso →</span>
-            <div class="tags"><span class="tag">Data viz</span><span class="tag">Dashboard</span><span class="tag">Wireframes</span><span class="tag">Componentes</span></div>
+            <p>A aba de análise do Guardião: milhares de registros viram padrões e pistas.</p>
+            <span class="ano">2026</span>
+            <img class="thumb" src="assets/it-tempo.webp" alt="" loading="lazy">
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="processo" class="secao">
+      <div class="wrap">
+        <div class="secao-titulo revela"><h2>Primeiro o problema.<br>Depois a tela.</h2><span>Como eu trabalho</span></div>
+        <div class="etapas">
+          <div class="revela"><b>01</b><strong>Descobrir</strong><p>Entendo o negócio, quem usa e as restrições antes de propor qualquer coisa.</p><small>Entrevistas · Questionários · Benchmarking · Jornadas</small></div>
+          <div class="revela" style="--atraso: .08s"><b>02</b><strong>Definir</strong><p>Transformo o que aprendi em públicos, fluxos e no que cada tela precisa resolver.</p><small>Fluxos · Arquitetura · Wireframes</small></div>
+          <div class="revela" style="--atraso: .16s"><b>03</b><strong>Desenvolver</strong><p>Interfaces, componentes e protótipos que nascem juntos e são testados cedo.</p><small>Interfaces · Design system · Protótipos · Testes</small></div>
+          <div class="revela" style="--atraso: .24s"><b>04</b><strong>Entregar</strong><p>Estados, erros e especificações documentados, pra tela sair do Figma como foi pensada.</p><small>Estados e erros · Especificação · Handoff</small></div>
+        </div>
+        <p class="nota revela">Uso IA pra pesquisar, explorar alternativas e prototipar mais rápido. A decisão final é sempre minha.</p>
+      </div>
+    </section>
+
+    <section id="sobre" class="secao">
+      <div class="wrap">
+        <div class="secao-titulo revela"><h2>Sobre</h2><span>De onde eu vim</span></div>
+        <div class="sobre-grid">
+          <p class="frase revela">Entrei na tecnologia por estratégia e fiquei por paixão. No design encontrei o que mais gosto: <em>fazer as perguntas certas e achar resposta pros problemas.</em></p>
+          <div class="sobre-lado revela" style="--atraso: .08s">
+            <p>Comecei com uma bolsa no técnico em Desenvolvimento de Sistemas do SENAI/SC, porque não queria sair do ensino médio sem uma profissão. Na Softplan conheci a tecnologia por dentro, e no design achei um jeito mais criativo de resolver problemas.</p>
+            <p>O que mais elogiam em mim é a comunicação: com o time, com quem usa e com quem vai desenvolver. Hoje curso Design na UNISUL, com formatura prevista em 2028.</p>
           </div>
-        </a>
-
-        <a href="bora.html" class="projeto">
-          <div class="projeto-img">
-            <div class="capa capa-bora">
-              <div class="laptop"><div class="tela"><img src="assets/bora-landing-hero.webp" alt="Landing page da marca BORA!"></div><div class="base"></div></div>
-              <span class="sticker">BORA!</span>
-            </div>
-          </div>
-          <div class="projeto-info">
-            <span class="selo" style="background: var(--coral); color: var(--branco)">Projeto autoral</span>
-            <h3>BORA!</h3>
-            <p>Identidade de um estúdio de design e marketing: manual, kit gráfico, mockups, redes sociais, apresentação comercial e landing page.</p>
-            <span class="ver">Ver projeto →</span>
-            <div class="tags"><span class="tag">Branding</span><span class="tag">Identidade visual</span><span class="tag">Landing page</span></div>
-          </div>
-        </a>
+        </div>
+        <div class="trajetoria">
+          <div class="revela"><span>2023 – 2025</span><strong>Softplan</strong><p>Jovem aprendiz em People Operations.</p></div>
+          <div class="revela"><span>2025 – 2026</span><strong>CIEE SC</strong><p>Estágio em design gráfico, wireframes e protótipos.</p></div>
+          <div class="revela"><span>2026 – hoje</span><strong>Dígitro Tecnologia</strong><p>Estágio em UX/UI: sistemas corporativos, design system e handoff.</p></div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
-  <section id="faco" class="faco">
+  <footer id="contato" class="rodape">
     <div class="wrap">
-      <div class="sec-head">
-        <div>
-          <span class="label" style="color: var(--acido)">O que eu faço</span>
-          <h2>Várias frentes, o mesmo cuidado.</h2>
-        </div>
-        <p>O que eu faço no dia a dia na Dígitro e nos meus projetos, da primeira conversa sobre o problema até a tela pronta pra ser construída.</p>
+      <span class="rodape-rot revela">Contato</span>
+      <h2 class="revela">Tem uma vaga?<br><a href="mailto:manassesmarcelino@gmail.com">Vamos conversar.</a></h2>
+      <div class="rodape-links revela">
+        <a href="mailto:manassesmarcelino@gmail.com">manassesmarcelino@gmail.com</a>
+        <a href="https://www.linkedin.com/in/manasses-marcelino-ux" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a href="curriculo.pdf" target="_blank" rel="noopener">Currículo em PDF ↗</a>
       </div>
-
-      <div class="frentes">
-        <div class="frente"><span class="n">01</span><h3>Pesquisa e descoberta</h3><p>Entrevistas e pesquisas · Benchmarking · Jornadas e pontos de dor</p></div>
-        <div class="frente"><span class="n">02</span><h3>Fluxos e estrutura</h3><p>User flows · Arquitetura da informação · Wireframes</p></div>
-        <div class="frente"><span class="n">03</span><h3>Interfaces</h3><p>Alta fidelidade · Web, tablet e mobile · Textos da interface</p></div>
-        <div class="frente"><span class="n">04</span><h3>Design system</h3><p>Componentes e variantes · Tokens · Ícones</p></div>
-        <div class="frente"><span class="n">05</span><h3>Protótipos e testes</h3><p>Protótipos navegáveis · Testes de usabilidade · Iteração</p></div>
-        <div class="frente"><span class="n">06</span><h3>Dashboards e dados</h3><p>KPIs · Gráficos e tabelas · Filtros e detalhes</p></div>
-        <div class="frente"><span class="n">07</span><h3>Melhoria contínua</h3><p>Análise de interfaces · Acessibilidade · Usabilidade</p></div>
-        <div class="frente"><span class="n">08</span><h3>Handoff e time</h3><p>Estados e erros · Refinamentos com o time · Acompanhamento da implementação</p></div>
-        <div class="frente"><span class="n">09</span><h3>Marca e comunicação</h3><p>Identidade visual · Peças e campanhas · Apresentações</p></div>
-      </div>
-
-      <p class="frentes-nota">E em todas as frentes: uso IA pra pesquisar, explorar alternativas e prototipar mais rápido, com a decisão final sempre minha.</p>
-    </div>
-  </section>
-
-  <section id="processo" class="metodo">
-    <div class="wrap">
-      <div class="sec-head">
-        <div>
-          <span class="label" style="color: var(--violeta)">Como eu crio</span>
-          <h2>Como uma ideia vira tela.</h2>
-        </div>
-        <div>
-          <p>Me guio pelo Double Diamond: primeiro abro o problema, depois fecho a solução. E cada fase tem seu lugar no Figma, pra qualquer pessoa do time achar o que precisa.</p>
-        </div>
-      </div>
-
-      <div class="passos">
-        <a class="passo destaque" href="futuremind.html">
-          <div class="topo"><span class="num">01</span><span class="seta">↗</span></div>
-          <span class="fase">Discover</span>
-          <h3>Abrir o problema</h3>
-          <p>Entendo o negócio, quem usa e as restrições. Olho o que já existe antes de propor qualquer coisa.</p>
-        </a>
-        <a class="passo" href="backup.html">
-          <div class="topo"><span class="num">02</span><span class="seta">↗</span></div>
-          <span class="fase">Define</span>
-          <h3>Escolher o foco</h3>
-          <p>Transformo o que aprendi em públicos, fluxos e arquitetura. Aqui decido o que cada tela precisa resolver.</p>
-        </a>
-        <a class="passo" href="intelletotum.html">
-          <div class="topo"><span class="num">03</span><span class="seta">↗</span></div>
-          <span class="fase">Develop</span>
-          <h3>Criar e testar</h3>
-          <p>Wireframes, protótipos e alternativas. Os componentes e padrões nascem junto com as telas.</p>
-        </a>
-        <a class="passo" href="backup.html">
-          <div class="topo"><span class="num">04</span><span class="seta">↗</span></div>
-          <span class="fase">Deliver</span>
-          <h3>Entregar redondo</h3>
-          <p>Estados, erros e especificações documentados, pra tela sair do Figma do jeito que foi pensada.</p>
-        </a>
-      </div>
-
-      <div class="organizo">
-        <strong>Como eu organizo os arquivos</strong>
-        <div class="chips"><span>Uma página por etapa</span><span>Nomes que qualquer um entende</span><span>Componentes com variantes</span><span>Tokens de cor e espaço</span><span>Estados ao lado de cada tela</span></div>
-      </div>
-    </div>
-  </section>
-
-  <section id="sobre" class="sobre">
-    <div class="wrap">
-      <div class="sec-head">
-        <div>
-          <span class="label" style="color: var(--violeta)">Sobre</span>
-          <h2>Vim do código. Fiquei pelo design.</h2>
-        </div>
-        <p>Me formei técnico em Desenvolvimento de Sistemas no SENAI/SC e hoje me dedico ao design: curso Design na UNISUL, com formatura prevista em 2028.</p>
-      </div>
-
-      <div class="linha-tempo">
-        <div class="etapa">
-          <span class="ano">2023 – 2025</span>
-          <h4>Softplan</h4>
-          <p>Jovem aprendiz em People Operations. Primeiro contato com uma empresa de tecnologia, processos e comunicação entre times.</p>
-        </div>
-        <div class="etapa">
-          <span class="ano">2025 – 2026</span>
-          <h4>CIEE SC</h4>
-          <p>Estágio em design gráfico: wireframes, protótipos de baixa e média fidelidade, peças digitais e apresentações.</p>
-        </div>
-        <div class="etapa atual">
-          <span class="ano">2026 – agora</span>
-          <h4>Dígitro Tecnologia</h4>
-          <p>Estágio em UX/UI: interfaces de sistemas corporativos, design system, componentes, ícones e handoff com engenharia.</p>
-        </div>
-      </div>
-
-      <div class="diferencial">
-        <span class="num">!</span>
-        <p>Gosto de criar do zero tanto quanto de deixar redondo o que já existe. Entendo quem usa, encontro o que importa e cuido de cada detalhe da tela. E como já estive do outro lado, sei o que o time precisa pra levar o design pro ar do jeitinho que foi pensado.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="contato" class="contato">
-    <div class="orbita"></div>
-    <div class="wrap" style="position: relative; z-index: 1">
-      <span class="label" style="color: var(--acido)">Contato</span>
-      <h2 style="margin-top: 20px">Bora <em>conversar?</em></h2>
-      <p>Estou aberto a vagas de UX/UI Designer júnior. Me chama que eu mostro o resto do processo.</p>
-      <div class="acoes">
-        <a href="mailto:manassesmarcelino@gmail.com" class="btn btn-acido">Mandar e-mail ↗</a>
-        <a href="https://www.linkedin.com/in/manasses-marcelino-ux" class="btn btn-ghost" target="_blank" rel="noopener">LinkedIn ↗</a>
-        <a href="curriculo.pdf" class="btn btn-ghost" target="_blank" rel="noopener">Currículo (PDF)</a>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <div class="wrap">
-      <span>© 2026 Manassés Marcelino</span>
-      <span>Feito com Figma e muita organização.</span>
+      <div class="rodape-fim"><span>© 2026 Manassés Marcelino</span><a href="#inicio">Voltar ao topo ↑</a></div>
     </div>
   </footer>
 
+  <div class="preview" aria-hidden="true"><img alt=""></div>
+  <script>
+// Interações leves: entrada no scroll, menu e prévia dos projetos.
+(function () {
+  var doc = document.documentElement;
+  var reduz = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  doc.classList.add('js');
+
+  // Nos cases, marca os blocos principais pra entrarem com animação
+  document.querySelectorAll(
+    '.case-hero .label, .case-hero h1, .case-hero .sub, .ficha, .capa-case, .premio, ' +
+    '.bloco .label, .bloco h2, .bloco .lead, .card, .metodo-card, .achado, .numero, ' +
+    '.citacao, .ouvimos .linha, .decisao, .case-img, .fluxo'
+  ).forEach(function (el) { el.classList.add('revela'); });
+
+  document.querySelectorAll('.grade, .metodos, .achados, .numeros, .resultados').forEach(function (g) {
+    Array.prototype.forEach.call(g.children, function (c, i) {
+      if (!c.style.getPropertyValue('--atraso')) c.style.setProperty('--atraso', (i * 0.07) + 's');
+    });
+  });
+
+  var itens = document.querySelectorAll('.revela');
+  if (reduz || !('IntersectionObserver' in window)) {
+    itens.forEach(function (el) { el.classList.add('visivel'); });
+  } else {
+    var obs = new IntersectionObserver(function (entradas) {
+      entradas.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('visivel'); obs.unobserve(e.target); }
+      });
+    }, { rootMargin: '0px 0px -6% 0px', threshold: 0.06 });
+    itens.forEach(function (el) { obs.observe(el); });
+  }
+
+  // Linha embaixo do topo depois de rolar
+  var topo = document.querySelector('.topo-site');
+  function aoRolar() { if (topo) topo.classList.toggle('rolou', window.scrollY > 10); }
+  window.addEventListener('scroll', aoRolar, { passive: true });
+  aoRolar();
+
+  // Link ativo no menu
+  var links = document.querySelectorAll('.menu a[href^="#"]');
+  if (links.length && 'IntersectionObserver' in window) {
+    var mapa = {};
+    links.forEach(function (a) { mapa[a.getAttribute('href').slice(1)] = a; });
+    var obsSec = new IntersectionObserver(function (entradas) {
+      entradas.forEach(function (e) {
+        if (e.isIntersecting && mapa[e.target.id]) {
+          links.forEach(function (a) { a.classList.remove('ativo'); });
+          mapa[e.target.id].classList.add('ativo');
+        }
+      });
+    }, { rootMargin: '-45% 0px -50% 0px' });
+    Object.keys(mapa).forEach(function (id) { var s = document.getElementById(id); if (s) obsSec.observe(s); });
+  }
+
+  // Prévia da tela seguindo o cursor na lista de projetos
+  var pv = document.querySelector('.preview');
+  if (pv && window.matchMedia('(hover: hover) and (min-width: 861px)').matches) {
+    var img = pv.querySelector('img');
+    document.querySelectorAll('.projeto-item').forEach(function (it) {
+      it.addEventListener('mouseenter', function () { img.src = it.getAttribute('data-img'); pv.classList.add('on'); });
+      it.addEventListener('mouseleave', function () { pv.classList.remove('on'); });
+    });
+    window.addEventListener('pointermove', function (e) {
+      pv.style.left = Math.min(e.clientX + 260, window.innerWidth - 240) + 'px';
+      pv.style.top = e.clientY + 'px';
+    });
+  }
+})();
+
+</script>
 </body>
 </html>

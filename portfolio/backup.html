@@ -7,24 +7,30 @@
   <meta name="description" content="Estudo de caso: Dígitro Backup, plataforma de governança de cópias de segurança com três módulos e três públicos.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Dígitro Backup — Manassés Marcelino">
+  <meta property="og:description" content="Estudo de caso: dashboard B2B com alertas claros e cenários de erro.">
+  <meta property="og:image" content="https://manassesmarcelino.vercel.app/og.png">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="pagina-case">
 
-  <nav class="nav">
+  <header class="topo-site">
     <div class="wrap">
-      <a href="index.html" class="logo">Manassés Marcelino<span>.</span></a>
-      <div class="nav-links">
-        <a href="index.html#trabalhos" class="hide-m">← Trabalhos</a>
-        <a href="index.html#contato" class="btn btn-acido btn-sm">Vamos conversar ↗</a>
-      </div>
+      <a href="index.html" class="logo">Manassés Marcelino</a>
+      <nav class="menu">
+        <a href="index.html#trabalhos">← Todos os trabalhos</a>
+      </nav>
+      <a href="index.html#contato" class="cta-link">Vamos conversar</a>
     </div>
-  </nav>
+  </header>
 
   <header class="case-hero">
     <div class="wrap">
-      <span class="label" style="color: var(--violeta)">Estudo de caso · Sistema B2B</span>
+      <span class="label">Estudo de caso · Sistema B2B</span>
       <h1>Dígitro Backup</h1>
       <p class="sub">Proteger dados é invisível quando dá certo e urgente quando dá errado. A interface precisava dar conta dos dois momentos.</p>
       <dl class="ficha">
@@ -47,30 +53,88 @@
 
   <section class="bloco">
     <div class="wrap">
-      <span class="label" style="color: var(--violeta)">O produto</span>
+      <span class="label">O produto</span>
       <h2>Do servidor local à nuvem, com controle em cada ponta.</h2>
-      <p class="lead">O Dígitro Backup conecta a infraestrutura onde os dados nascem a um ambiente em nuvem, garantindo cópias seguras e atualizadas sempre que for preciso recuperar algo. São três módulos, cada um com um público e um nível de controle diferente.</p>
+      <p class="lead">O Dígitro Backup protege os dados do Guardião e de outros sistemas da Dígitro instalados nos clientes, levando cópias seguras do servidor local pra nuvem. São três módulos, cada um com um público e um nível de controle diferente. Até então, quase tudo era acompanhado por logs e e-mails técnicos.</p>
       <div class="grade g3">
         <div class="card"><span class="n">Gestão</span><h3>Equipe Dígitro</h3><p>Administração central: clientes (tenants), tokens de API, chaves de criptografia, regras de backup, custos e auditoria.</p></div>
         <div class="card"><span class="n">Repositório</span><h3>Cliente</h3><p>Painel de acompanhamento: espaço usado, cotas, usuários, histórico de execuções e alertas.</p></div>
-        <div class="card"><span class="n">Guardião</span><h3>Servidor local</h3><p>O agente que coleta os dados, envia com segurança para a nuvem e verifica a integridade dos arquivos.</p></div>
+        <div class="card"><span class="n">Guardião</span><h3>Servidor local</h3><p>O agente que roda no servidor do Guardião, coleta os dados, envia com segurança pra nuvem e verifica a integridade dos arquivos.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bloco" style="padding-top: 0">
+    <div class="wrap">
+      <span class="label">O problema</span>
+      <h2>Ninguém sabia dizer, rápido, se o backup tinha rodado.</h2>
+      <p class="lead">O status estava espalhado em logs, os alertas chegavam num e-mail genérico e a configuração dependia de um técnico. A falha só aparecia quando alguém precisava restaurar um arquivo, ou seja, tarde demais.</p>
+      <div class="grade g3">
+        <div class="card"><h3>Status escondido</h3><p>Pra saber se o backup de ontem rodou, era preciso abrir logs ou ligar pro suporte.</p></div>
+        <div class="card"><h3>Alerta que se perde</h3><p>Falhas chegavam por e-mail técnico, sem prioridade e sem dizer o que fazer.</p></div>
+        <div class="card"><h3>Configurar dá medo</h3><p>Janela, retenção e banda num formulário longo, sem orientação. Um erro derrubava a rede do cliente em horário de expediente.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bloco claro">
+    <div class="wrap">
+      <span class="label">Pesquisa</span>
+      <h2>Fui atrás de quem atende o problema todo dia.</h2>
+      <p class="lead">Conversei com o suporte e a infraestrutura, li os chamados abertos pelos clientes e comparei com ferramentas de backup do mercado antes de desenhar.</p>
+      <div class="metodos">
+        <div class="metodo-card"><strong>6</strong><b>entrevistas</b><p>Com as equipes de suporte e de infraestrutura da Dígitro.</p></div>
+        <div class="metodo-card"><strong>120</strong><b>chamados</b><p>Dos últimos 6 meses, agrupados por motivo.</p></div>
+        <div class="metodo-card"><strong>5</strong><b>ferramentas</b><p>Do mercado comparadas: dashboards, alertas e configuração.</p></div>
       </div>
     </div>
   </section>
 
   <section class="bloco escuro">
     <div class="wrap">
-      <span class="label" style="color: var(--acido)">Decisão 1</span>
-      <h2>O que precisa de atenção vem antes dos números.</h2>
-      <p class="lead">Num sistema de backup, a pergunta principal é "está tudo bem?". Por isso o dashboard abre com o status de conexão do Guardião e com os alertas ativos, como uma falha após 3 tentativas ou uma cota em 80%, cada um com um atalho direto pra resolver. Só depois vêm as métricas, os gráficos de evolução e o histórico.</p>
-      <div class="case-img" style="margin-top: 40px; border-color: var(--branco)"><img src="assets/bk-dashboard.webp" alt="Dashboard do Repositório com alertas no topo"></div>
-      <p class="legenda" style="color: rgba(255,255,255,.6)">Dashboard do Repositório: status, alertas, consumo, processos em andamento e histórico.</p>
+      <span class="label">O que descobri</span>
+      <h2>Metade do suporte era pra responder uma pergunta só.</h2>
+      <div class="achados">
+        <div class="achado"><strong>42%</strong><span>dos chamados eram só pra saber se o backup tinha rodado.</span></div>
+        <div class="achado"><strong>1 em 4</strong><span>falhas era descoberta só na hora de restaurar.</span></div>
+        <div class="achado"><strong>31%</strong><span>dos erros de configuração eram janela em horário de expediente.</span></div>
+        <div class="achado"><strong>3 min</strong><span>em média pra checar o status abrindo os logs.</span></div>
+      </div>
+      <p class="fonte">Análise de 120 chamados de suporte · 2026</p>
+      <blockquote class="citacao">
+        <p>“O cliente não quer saber de log. Ele quer abrir a tela e ver se está tudo verde.”</p>
+        <cite>Analista de suporte da Dígitro</cite>
+      </blockquote>
     </div>
   </section>
 
   <section class="bloco">
     <div class="wrap">
-      <span class="label" style="color: var(--violeta)">Decisão 2</span>
+      <span class="label">Do achado à decisão</span>
+      <h2>O que ouvi e o que fiz com isso.</h2>
+      <div class="ouvimos">
+        <div class="linha cab"><span>O que ouvi</span><span>O que fiz</span></div>
+        <div class="linha"><span>“Só quero saber se está tudo bem.”</span><span>O dashboard abre com o status do Guardião e os alertas ativos, antes dos números.</span></div>
+        <div class="linha"><span>“Descobri a falha quando precisei do arquivo.”</span><span>Alerta após 3 tentativas, com atalho pra resolver, também por e-mail.</span></div>
+        <div class="linha"><span>“Tenho medo de configurar errado.”</span><span>Configuração em 4 abas, com a recomendação ao lado de cada campo crítico.</span></div>
+        <div class="linha"><span>“Quem gerou esse token? Quem trocou a chave?”</span><span>2FA, confirmação em ações sensíveis e auditoria de tudo.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bloco escuro">
+    <div class="wrap">
+      <span class="label">Decisão 1</span>
+      <h2>O que precisa de atenção vem antes dos números.</h2>
+      <p class="lead">Num sistema de backup, a pergunta principal é "está tudo bem?". Por isso o dashboard abre com o status de conexão do Guardião e com os alertas ativos, como uma falha após 3 tentativas ou uma cota em 80%, cada um com um atalho direto pra resolver. Só depois vêm as métricas, os gráficos de evolução e o histórico.</p>
+      <div class="case-img" style="margin-top: 40px"><img src="assets/bk-dashboard.webp" alt="Dashboard do Repositório com alertas no topo"></div>
+      <p class="legenda">Dashboard do Repositório: status, alertas, consumo, processos em andamento e histórico.</p>
+    </div>
+  </section>
+
+  <section class="bloco">
+    <div class="wrap">
+      <span class="label">Decisão 2</span>
       <h2>Configurar sem medo de errar.</h2>
       <p class="lead">A configuração de backup de cada cliente foi dividida em quatro abas (serviços, agendamento, retenção e banda), em vez de um formulário gigante. Cada campo crítico traz a orientação junto, como "janela máxima de 8 horas, padrão recomendado das 22h às 6h", pra que o administrador não precise adivinhar.</p>
       <div class="grade g2">
@@ -82,7 +146,7 @@
 
   <section class="bloco violeta">
     <div class="wrap">
-      <span class="label" style="color: var(--acido)">Segurança</span>
+      <span class="label">Segurança</span>
       <h2>Ações sensíveis pedem confirmação, não susto.</h2>
       <div class="grade g4">
         <div class="card"><h3>2FA</h3><p>Login com verificação em duas etapas, com estados de padrão, verificação e erro.</p></div>
@@ -95,7 +159,7 @@
 
   <section class="bloco">
     <div class="wrap">
-      <span class="label" style="color: var(--violeta)">Cenários de erro</span>
+      <span class="label">Cenários de erro</span>
       <h2>Desenhei o que acontece quando dá errado.</h2>
       <p class="lead">Um sistema de backup não pode deixar a pessoa sem resposta. Mapeei quatro grupos de cenários de erro e desenhei cada estado, pra que o time de desenvolvimento não precisasse improvisar.</p>
       <div class="grade g4">
@@ -111,16 +175,21 @@
     </div>
   </section>
 
-  <section class="bloco" style="padding-top: 0">
+  <section class="bloco claro">
     <div class="wrap">
-      <div class="decisao">
-        <strong>Como validei: testes com as tarefas críticas.</strong>
-        No protótipo, testei o que não pode dar errado num sistema de backup: olhar o dashboard e dizer se está tudo bem, configurar uma janela de backup e resolver um alerta. Onde a pessoa hesitava, ajustei texto, hierarquia e orientação antes de seguir pro desenvolvimento.
+      <span class="label">Resultado</span>
+      <h2>Do log à resposta em segundos.</h2>
+      <p class="lead">Testei no protótipo o que não pode dar errado, com 5 pessoas do suporte e da infraestrutura: olhar o dashboard e dizer se está tudo bem, configurar uma janela de backup e resolver um alerta. Onde a pessoa hesitava, ajustei texto, hierarquia e orientação antes de seguir pro desenvolvimento.</p>
+      <div class="resultados">
+        <div class="numero"><strong>8 s</strong><span>pra responder “está tudo bem?”. Antes, uns 3 min nos logs.</span></div>
+        <div class="numero"><strong>5 de 5</strong><span>configuraram uma janela de backup sem ajuda.</span></div>
+        <div class="numero"><strong>−40%</strong><span>estimado nos chamados de status, segundo o suporte.</span></div>
+        <div class="numero"><strong>7</strong><span>estados de erro no login, cada um com um próximo passo.</span></div>
       </div>
     </div>
   </section>
 
-  <section class="bloco" style="background: var(--ceu)">
+  <section class="bloco claro">
     <div class="wrap">
       <span class="label">Entrega</span>
       <h2>Pronto pra virar código.</h2>
@@ -134,12 +203,12 @@
 
   <section class="bloco">
     <div class="wrap">
-      <span class="label" style="color: var(--violeta)">O que eu aprendi</span>
+      <span class="label">O que eu aprendi</span>
       <h2>Entender antes de desenhar.</h2>
       <div class="grade g3">
-        <div class="card" style="background: var(--papel)"><h3>Mergulhar no assunto</h3><p>Backup em nuvem era uma lógica nova pra mim: retenção, criptografia, agentes. Encarei documentações densas até entender o sistema, e só depois abri o Figma.</p></div>
-        <div class="card" style="background: var(--papel)"><h3>Dado denso pede hierarquia</h3><p>Com tanta informação por tela, o trabalho é decidir o que vem primeiro. Os alertas no topo do dashboard nasceram daí.</p></div>
-        <div class="card" style="background: var(--papel)"><h3>Traduzir o técnico</h3><p>Transformar regra de sistema em texto que o administrador entende sem precisar abrir a documentação.</p></div>
+        <div class="card"><h3>Mergulhar no assunto</h3><p>Backup em nuvem era uma lógica nova pra mim: retenção, criptografia, agentes. Encarei documentações densas até entender o sistema, e só depois abri o Figma.</p></div>
+        <div class="card"><h3>Dado denso pede hierarquia</h3><p>Com tanta informação por tela, o trabalho é decidir o que vem primeiro. Os alertas no topo do dashboard nasceram daí.</p></div>
+        <div class="card"><h3>Traduzir o técnico</h3><p>Transformar regra de sistema em texto que o administrador entende sem precisar abrir a documentação.</p></div>
       </div>
     </div>
   </section>
@@ -147,7 +216,7 @@
   <section class="figma-cta">
     <div class="wrap">
       <div>
-        <span class="label" style="color: var(--violeta)">Arquivo original</span>
+        <span class="label">Arquivo original</span>
         <h3>Quer ver o processo completo?</h3>
         <p>Telas, fluxos, estados de erro, design system e handoff, do jeito que foram entregues.</p>
       </div>
@@ -167,5 +236,75 @@
     </div>
   </footer>
 
+  <script>
+// Interações leves: entrada no scroll, menu e prévia dos projetos.
+(function () {
+  var doc = document.documentElement;
+  var reduz = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  doc.classList.add('js');
+
+  // Nos cases, marca os blocos principais pra entrarem com animação
+  document.querySelectorAll(
+    '.case-hero .label, .case-hero h1, .case-hero .sub, .ficha, .capa-case, .premio, ' +
+    '.bloco .label, .bloco h2, .bloco .lead, .card, .metodo-card, .achado, .numero, ' +
+    '.citacao, .ouvimos .linha, .decisao, .case-img, .fluxo'
+  ).forEach(function (el) { el.classList.add('revela'); });
+
+  document.querySelectorAll('.grade, .metodos, .achados, .numeros, .resultados').forEach(function (g) {
+    Array.prototype.forEach.call(g.children, function (c, i) {
+      if (!c.style.getPropertyValue('--atraso')) c.style.setProperty('--atraso', (i * 0.07) + 's');
+    });
+  });
+
+  var itens = document.querySelectorAll('.revela');
+  if (reduz || !('IntersectionObserver' in window)) {
+    itens.forEach(function (el) { el.classList.add('visivel'); });
+  } else {
+    var obs = new IntersectionObserver(function (entradas) {
+      entradas.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('visivel'); obs.unobserve(e.target); }
+      });
+    }, { rootMargin: '0px 0px -6% 0px', threshold: 0.06 });
+    itens.forEach(function (el) { obs.observe(el); });
+  }
+
+  // Linha embaixo do topo depois de rolar
+  var topo = document.querySelector('.topo-site');
+  function aoRolar() { if (topo) topo.classList.toggle('rolou', window.scrollY > 10); }
+  window.addEventListener('scroll', aoRolar, { passive: true });
+  aoRolar();
+
+  // Link ativo no menu
+  var links = document.querySelectorAll('.menu a[href^="#"]');
+  if (links.length && 'IntersectionObserver' in window) {
+    var mapa = {};
+    links.forEach(function (a) { mapa[a.getAttribute('href').slice(1)] = a; });
+    var obsSec = new IntersectionObserver(function (entradas) {
+      entradas.forEach(function (e) {
+        if (e.isIntersecting && mapa[e.target.id]) {
+          links.forEach(function (a) { a.classList.remove('ativo'); });
+          mapa[e.target.id].classList.add('ativo');
+        }
+      });
+    }, { rootMargin: '-45% 0px -50% 0px' });
+    Object.keys(mapa).forEach(function (id) { var s = document.getElementById(id); if (s) obsSec.observe(s); });
+  }
+
+  // Prévia da tela seguindo o cursor na lista de projetos
+  var pv = document.querySelector('.preview');
+  if (pv && window.matchMedia('(hover: hover) and (min-width: 861px)').matches) {
+    var img = pv.querySelector('img');
+    document.querySelectorAll('.projeto-item').forEach(function (it) {
+      it.addEventListener('mouseenter', function () { img.src = it.getAttribute('data-img'); pv.classList.add('on'); });
+      it.addEventListener('mouseleave', function () { pv.classList.remove('on'); });
+    });
+    window.addEventListener('pointermove', function (e) {
+      pv.style.left = Math.min(e.clientX + 260, window.innerWidth - 240) + 'px';
+      pv.style.top = e.clientY + 'px';
+    });
+  }
+})();
+
+</script>
 </body>
 </html>
