@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body class="pagina-case">
+  <div class="progresso" aria-hidden="true"></div>
 
   <header class="topo-site">
     <div class="wrap">
@@ -39,13 +40,18 @@
         <div><dt>Equipe</dt><dd>5 pessoas</dd></div>
         <div><dt>Entregas</dt><dd>Loja, painel, e-mails, handoff</dd></div>
       </dl>
+      <div class="resumo">
+        <div><span>Problema</span><p>Escolher skincare é tentativa e erro, principalmente pra peles sensíveis, acneicas e negras.</p></div>
+        <div><span>Solução</span><p>Um quiz que descobre o tipo de pele e um Monte o seu que só combina ativos seguros. Uma máquina de IoT prepara cada fórmula.</p></div>
+        <div><span>Resultado</span><p>Nos testes com 8 colegas de outros projetos, 7 montaram a fórmula sozinhos na primeira tentativa, em menos de 2 minutos.</p></div>
+      </div>
     </div>
   </header>
 
   <div class="wrap">
     <div class="capa capa-sk capa-case">
       <div class="laptop"><div class="tela"><img src="assets/sk-inicio.webp" alt="Página inicial da SKYNS"></div><div class="base"></div></div>
-      <div class="janela"><div class="barra"><i></i><i></i><i></i></div><img src="assets/sk-quiz.webp" alt="Quiz de pele da SKYNS"></div>
+      <div class="janela"><div class="barra"><i></i><i></i><i></i></div><img loading="lazy" decoding="async" src="assets/sk-quiz.webp" alt="Quiz de pele da SKYNS"></div>
     </div>
     <p class="legenda">Página inicial e quiz de pele.</p>
   </div>
@@ -130,7 +136,7 @@
         <div class="card"><span class="n">Ativo → encaixe</span><h3>Até 3 encaixes</h3><p>Niacinamida, vitamina C, ácidos e retinol viram peças encaixadas na base.</p></div>
         <div class="card"><span class="n">Ordem → status</span><h3>5 etapas</h3><p>O site envia a ordem de montagem e o sensor da máquina devolve cada etapa concluída.</p></div>
       </div>
-      <div class="case-img" style="margin-top: 40px"><img src="assets/sk-maquina.webp" alt="Diagrama da fórmula até a máquina de montagem"></div>
+      <div class="case-img" style="margin-top: 40px"><img loading="lazy" decoding="async" src="assets/sk-maquina.webp" alt="Diagrama da fórmula até a máquina de montagem"></div>
       <p class="legenda">Da escolha no site até a ordem de montagem e o retorno do sensor.</p>
     </div>
   </section>
@@ -140,7 +146,7 @@
       <span class="label">Monte o seu</span>
       <h2>Liberdade pra escolher, segurança pra não errar.</h2>
       <p class="lead">A cliente escolhe o tipo de pele e até 3 ativos, e o preço atualiza na hora. Ativos que não combinam com o que já foi escolhido ficam bloqueados, com o motivo escrito do lado.</p>
-      <div class="case-img" style="margin-top: 40px"><img src="assets/sk-monte.webp" alt="Página do Sérum Balance Skin com o painel Monte a sua fórmula"></div>
+      <div class="case-img" style="margin-top: 40px"><img loading="lazy" decoding="async" src="assets/sk-monte.webp" alt="Página do Sérum Balance Skin com o painel Monte a sua fórmula"></div>
       <div class="decisao">
         <strong>Decisão de design: a máquina é bastidor.</strong>
         A cliente nunca vê peça, encaixe ou cor de base. Ela lê “Preparando a sua fórmula”. Toda a linguagem da máquina fica no painel da equipe.
@@ -158,8 +164,8 @@
         <div class="card"><span class="n">03</span><h3>A máquina</h3><p>Recebe a ordem com base e encaixes, monta em 5 etapas e devolve o status pelo sensor.</p></div>
       </div>
       <div class="grade g2" style="margin-top: 32px">
-        <div><div class="case-img"><img src="assets/sk-pedido.webp" alt="Tela de acompanhamento do pedido" style="aspect-ratio: 16 / 9; object-fit: cover; object-position: top"></div><p class="legenda">A cliente acompanha a fórmula sendo preparada.</p></div>
-        <div><div class="case-img"><img src="assets/sk-admin.webp" alt="Painel da equipe com os pedidos personalizados" style="aspect-ratio: 16 / 9; object-fit: cover; object-position: top"></div><p class="legenda">A equipe vê a fila da máquina e cada etapa da montagem.</p></div>
+        <div><div class="case-img"><img loading="lazy" decoding="async" src="assets/sk-pedido.webp" alt="Tela de acompanhamento do pedido" style="aspect-ratio: 16 / 9; object-fit: cover; object-position: top"></div><p class="legenda">A cliente acompanha a fórmula sendo preparada.</p></div>
+        <div><div class="case-img"><img loading="lazy" decoding="async" src="assets/sk-admin.webp" alt="Painel da equipe com os pedidos personalizados" style="aspect-ratio: 16 / 9; object-fit: cover; object-position: top"></div><p class="legenda">A equipe vê a fila da máquina e cada etapa da montagem.</p></div>
       </div>
     </div>
   </section>
@@ -169,7 +175,7 @@
       <span class="label">No celular</span>
       <h2>A mesma loja, na palma da mão.</h2>
       <p class="lead">Menu em gaveta, Monte o seu em etapas curtas e um checkout pensado pro polegar.</p>
-      <div class="case-img" style="margin-top: 40px"><img src="assets/sk-celular.webp" alt="Telas da SKYNS no celular: início, Monte o seu, menu, sacola, pagamento e acompanhamento"></div>
+      <div class="case-img" style="margin-top: 40px"><img loading="lazy" decoding="async" src="assets/sk-celular.webp" alt="Telas da SKYNS no celular: início, Monte o seu, menu, sacola, pagamento e acompanhamento"></div>
     </div>
   </section>
 
@@ -197,6 +203,17 @@
         <div class="card"><h3>Esconder a complexidade</h3><p>A cliente não precisa saber como a máquina funciona. Ela precisa saber quando a fórmula fica pronta.</p></div>
         <div class="card"><h3>Sob encomenda pede mais estados</h3><p>Um pedido feito na hora tem mais etapas, mais esperas e mais jeitos de dar errado. Cada um ganhou uma tela.</p></div>
       </div>
+    </div>
+  </section>
+
+  <section class="figma-cta">
+    <div class="wrap">
+      <div>
+        <span class="label">Arquivo original</span>
+        <h3>Quer ver o processo completo?</h3>
+        <p>Loja, painel da equipe, e-mails, protótipo navegável, design system e handoff, do jeito que foram entregues.</p>
+      </div>
+      <a href="https://www.figma.com/design/BgYxW8g4l084ty9IhGhATC/TELAS-UX-UI--SKINS-" class="btn btn-tinta" target="_blank" rel="noopener">Abrir no Figma ↗</a>
     </div>
   </section>
 
@@ -281,6 +298,9 @@
   }
 })();
 
+</script>
+<script>
+(function(){var b=document.querySelector(".progresso");function at(){var h=document.documentElement;var m=h.scrollHeight-innerHeight;b.style.transform="scaleX("+(m>0?scrollY/m:0)+")";}addEventListener("scroll",at,{passive:true});addEventListener("resize",at);at();})();
 </script>
 </body>
 </html>

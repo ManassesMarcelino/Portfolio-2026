@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body class="pagina-case">
+  <div class="progresso" aria-hidden="true"></div>
 
   <header class="topo-site">
     <div class="wrap">
@@ -39,13 +40,18 @@
         <div><dt>Plataforma</dt><dd>Web desktop</dd></div>
         <div><dt>Entregas</dt><dd>Wireframes, 5 visões, componentes</dd></div>
       </dl>
+      <div class="resumo">
+        <div><span>Problema</span><p>No Guardião, analisar dados dependia de exportar planilhas e montar relatórios fora do sistema.</p></div>
+        <div><span>Solução</span><p>Uma aba com seis números fixos de contexto e cinco visões que respondem às 4 perguntas de toda investigação.</p></div>
+        <div><span>Resultado</span><p>Menos de 1 min pra achar o horário de pico (antes, 25 min na planilha) e 5 visões aprovadas pro desenvolvimento.</p></div>
+      </div>
     </div>
   </header>
 
   <div class="wrap">
     <div class="capa capa-it capa-case">
       <div class="laptop"><div class="tela"><img src="assets/it-tempo.webp" alt="Visão de tempo com mapa de calor"></div><div class="base"></div></div>
-      <div class="janela"><div class="barra"><i></i><i></i><i></i></div><img src="assets/it-participantes.webp" alt="Visão de participantes"></div>
+      <div class="janela"><div class="barra"><i></i><i></i><i></i></div><img loading="lazy" decoding="async" src="assets/it-participantes.webp" alt="Visão de participantes"></div>
     </div>
     <p class="legenda">Visões de tempo e de participantes.</p>
     <p class="aviso">Todos os dados exibidos nas telas são fictícios.</p>
@@ -140,7 +146,7 @@
       <span class="label">Visão de tempo</span>
       <h2>O pico salta aos olhos.</h2>
       <p class="lead">O mapa de calor cruza dia da semana e hora, com a intensidade de cor proporcional ao volume e o pico destacado em texto ("Sáb às 01h · 160 mensagens"). Assim o padrão aparece em segundos, e o número exato continua lá pra quem precisar.</p>
-      <div class="case-img" style="margin-top: 40px"><img src="assets/it-tempo.webp" alt="Visão de tempo com mapa de calor, distribuição temporal e tipos"></div>
+      <div class="case-img" style="margin-top: 40px"><img loading="lazy" decoding="async" src="assets/it-tempo.webp" alt="Visão de tempo com mapa de calor, distribuição temporal e tipos"></div>
     </div>
   </section>
 
@@ -151,13 +157,13 @@
           <span class="label">Participantes</span>
           <h2 style="font-size: 30px">Quem fala com quem.</h2>
           <p class="lead" style="font-size: 17px; margin-bottom: 20px">As contas investigadas ganham a marcação ALVO, e o diagrama de conexões em comum mostra visualmente quem liga duas contas.</p>
-          <div class="case-img"><img src="assets/it-participantes.webp" alt="Visão de participantes com diagrama de conexões"></div>
+          <div class="case-img"><img loading="lazy" decoding="async" src="assets/it-participantes.webp" alt="Visão de participantes com diagrama de conexões"></div>
         </div>
         <div>
           <span class="label">Coincidências</span>
           <h2 style="font-size: 30px">O que se cruza.</h2>
           <p class="lead" style="font-size: 17px; margin-bottom: 20px">Pares de contas que usaram o mesmo endereço IP, os locais que elas compartilham e em que faixas do dia isso acontece.</p>
-          <div class="case-img"><img src="assets/it-coincidencias.webp" alt="Visão de coincidências de rede e locais"></div>
+          <div class="case-img"><img loading="lazy" decoding="async" src="assets/it-coincidencias.webp" alt="Visão de coincidências de rede e locais"></div>
         </div>
       </div>
     </div>
@@ -182,7 +188,7 @@
       <span class="label">Rede</span>
       <h2>Do resumo ao detalhe, sem trocar de tela.</h2>
       <p class="lead">A visão de rede lista a origem das conexões e a localização, e os modais estendidos abrem a lista completa de cada grupo por cima da tela.</p>
-      <div class="case-img" style="margin-top: 40px"><img src="assets/it-rede.webp" alt="Visão de rede com modais estendidos"></div>
+      <div class="case-img" style="margin-top: 40px"><img loading="lazy" decoding="async" src="assets/it-rede.webp" alt="Visão de rede com modais estendidos"></div>
     </div>
   </section>
 
@@ -317,6 +323,9 @@
   }
 })();
 
+</script>
+<script>
+(function(){var b=document.querySelector(".progresso");function at(){var h=document.documentElement;var m=h.scrollHeight-innerHeight;b.style.transform="scaleX("+(m>0?scrollY/m:0)+")";}addEventListener("scroll",at,{passive:true});addEventListener("resize",at);at();})();
 </script>
 </body>
 </html>

@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body class="pagina-case">
+  <div class="progresso" aria-hidden="true"></div>
 
   <header class="topo-site">
     <div class="wrap">
@@ -39,13 +40,18 @@
         <div><dt>Plataforma</dt><dd>Web desktop</dd></div>
         <div><dt>Entregas</dt><dd>3 módulos, erros, e-mail, handoff</dd></div>
       </dl>
+      <div class="resumo">
+        <div><span>Problema</span><p>Ninguém sabia dizer rápido se o backup tinha rodado: o status ficava espalhado em logs e e-mails técnicos.</p></div>
+        <div><span>Solução</span><p>Um dashboard que abre com os alertas, configuração em abas com orientação em cada campo e erros que dizem o que fazer.</p></div>
+        <div><span>Resultado</span><p>8 s pra responder "está tudo bem?" (antes, uns 3 min nos logs) e 5 de 5 configuraram sem ajuda.</p></div>
+      </div>
     </div>
   </header>
 
   <div class="wrap">
     <div class="capa capa-bk capa-case">
       <div class="laptop"><div class="tela"><img src="assets/bk-dashboard.webp" alt="Dashboard do módulo Repositório"></div><div class="base"></div></div>
-      <div class="janela"><div class="barra"><i></i><i></i><i></i></div><img src="assets/bk-agendamento.webp" alt="Configuração de agendamento de backup"></div>
+      <div class="janela"><div class="barra"><i></i><i></i><i></i></div><img loading="lazy" decoding="async" src="assets/bk-agendamento.webp" alt="Configuração de agendamento de backup"></div>
     </div>
     <p class="legenda">Dashboard do cliente e configuração da janela de backup.</p>
     <p class="aviso">Todos os dados exibidos nas telas são fictícios.</p>
@@ -127,7 +133,7 @@
       <span class="label">Decisão 1</span>
       <h2>O que precisa de atenção vem antes dos números.</h2>
       <p class="lead">Num sistema de backup, a pergunta principal é "está tudo bem?". Por isso o dashboard abre com o status de conexão do Guardião e com os alertas ativos, como uma falha após 3 tentativas ou uma cota em 80%, cada um com um atalho direto pra resolver. Só depois vêm as métricas, os gráficos de evolução e o histórico.</p>
-      <div class="case-img" style="margin-top: 40px"><img src="assets/bk-dashboard.webp" alt="Dashboard do Repositório com alertas no topo"></div>
+      <div class="case-img" style="margin-top: 40px"><img loading="lazy" decoding="async" src="assets/bk-dashboard.webp" alt="Dashboard do Repositório com alertas no topo"></div>
       <p class="legenda">Dashboard do Repositório: status, alertas, consumo, processos em andamento e histórico.</p>
     </div>
   </section>
@@ -138,8 +144,8 @@
       <h2>Configurar sem medo de errar.</h2>
       <p class="lead">A configuração de backup de cada cliente foi dividida em quatro abas (serviços, agendamento, retenção e banda), em vez de um formulário gigante. Cada campo crítico traz a orientação junto, como "janela máxima de 8 horas, padrão recomendado das 22h às 6h", pra que o administrador não precise adivinhar.</p>
       <div class="grade g2">
-        <div><div class="case-img"><img src="assets/bk-agendamento.webp" alt="Aba de agendamento da configuração de backup"></div><p class="legenda">Janela de backup com a recomendação ao lado do campo.</p></div>
-        <div><div class="case-img"><img src="assets/bk-tenants.webp" alt="Lista de tenants no módulo de Gestão"></div><p class="legenda">Gestão de tenants: consumo e status de cada cliente.</p></div>
+        <div><div class="case-img"><img loading="lazy" decoding="async" src="assets/bk-agendamento.webp" alt="Aba de agendamento da configuração de backup"></div><p class="legenda">Janela de backup com a recomendação ao lado do campo.</p></div>
+        <div><div class="case-img"><img loading="lazy" decoding="async" src="assets/bk-tenants.webp" alt="Lista de tenants no módulo de Gestão"></div><p class="legenda">Gestão de tenants: consumo e status de cada cliente.</p></div>
       </div>
     </div>
   </section>
@@ -169,8 +175,8 @@
         <div class="card"><span class="n">04</span><h3>Acesso</h3><p>7 estados de login: sem permissão, sessão expirada, conta bloqueada, primeiro acesso, serviço instável, erro de conexão e erro de dados.</p></div>
       </div>
       <div class="grade g2" style="margin-top: 32px">
-        <div><div class="case-img"><img src="assets/bk-erro-widgets.webp" alt="Dashboard com erro parcial nos widgets"></div><p class="legenda">Erro parcial: as métricas falham, mas a atividade recente continua disponível.</p></div>
-        <div><div class="case-img"><img src="assets/bk-erros-login.webp" alt="Sete estados de erro da tela de login" style="aspect-ratio: 16 / 9; object-fit: cover; object-position: top"></div><p class="legenda">Os 7 estados de erro do login, cada um com uma mensagem e um próximo passo.</p></div>
+        <div><div class="case-img"><img loading="lazy" decoding="async" src="assets/bk-erro-widgets.webp" alt="Dashboard com erro parcial nos widgets"></div><p class="legenda">Erro parcial: as métricas falham, mas a atividade recente continua disponível.</p></div>
+        <div><div class="case-img"><img loading="lazy" decoding="async" src="assets/bk-erros-login.webp" alt="Sete estados de erro da tela de login" style="aspect-ratio: 16 / 9; object-fit: cover; object-position: top"></div><p class="legenda">Os 7 estados de erro do login, cada um com uma mensagem e um próximo passo.</p></div>
       </div>
     </div>
   </section>
@@ -305,6 +311,9 @@
   }
 })();
 
+</script>
+<script>
+(function(){var b=document.querySelector(".progresso");function at(){var h=document.documentElement;var m=h.scrollHeight-innerHeight;b.style.transform="scaleX("+(m>0?scrollY/m:0)+")";}addEventListener("scroll",at,{passive:true});addEventListener("resize",at);at();})();
 </script>
 </body>
 </html>

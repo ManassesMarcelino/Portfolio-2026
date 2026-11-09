@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body class="pagina-case">
+  <div class="progresso" aria-hidden="true"></div>
 
   <header class="topo-site">
     <div class="wrap">
@@ -39,6 +40,11 @@
         <div><dt>Plataformas</dt><dd>Web, tablet e mobile</dd></div>
         <div><dt>Ferramentas</dt><dd>Figma</dd></div>
       </dl>
+      <div class="resumo">
+        <div><span>Problema</span><p>Psicólogos atendiam online juntando site, WhatsApp, Meet e planilha, e o paciente não sabia por onde começar.</p></div>
+        <div><span>Solução</span><p>Uma plataforma única com agenda, chat, vídeo e pagamento, desenhada a partir de uma pesquisa com 50 psicólogos.</p></div>
+        <div><span>Resultado</span><p>Nos testes, 9 de 10 agendaram sozinhos, em 60% menos tempo. Melhor projeto do curso.</p></div>
+      </div>
     </div>
   </header>
 
@@ -245,7 +251,7 @@
     <div class="wrap">
       <span class="label">Telas</span>
       <h2>Paciente, profissional e administração.</h2>
-      <div class="case-img" style="margin-top: 32px"><img src="assets/futuremind-mockups.webp" alt="Telas do FutureMind para paciente, profissional e administração"></div>
+      <div class="case-img" style="margin-top: 32px"><img loading="lazy" decoding="async" src="assets/futuremind-mockups.webp" alt="Telas do FutureMind para paciente, profissional e administração"></div>
       <p class="legenda">Do agendamento à videochamada, a agenda do profissional e o back-office, em desktop, tablet e celular.</p>
     </div>
   </section>
@@ -254,7 +260,7 @@
     <div class="wrap">
       <span class="label">O estudo completo</span>
       <h2>Todas as etapas, num só quadro.</h2>
-      <div class="case-img" style="margin-top: 32px"><img src="assets/futuremind-case.webp" alt="Visão geral das 14 pranchas do estudo de caso do FutureMind"></div>
+      <div class="case-img" style="margin-top: 32px"><img loading="lazy" decoding="async" src="assets/futuremind-case.webp" alt="Visão geral das 14 pranchas do estudo de caso do FutureMind"></div>
       <p class="legenda">As 14 pranchas do estudo de caso, do problema aos próximos passos.</p>
     </div>
   </section>
@@ -375,6 +381,9 @@
   }
 })();
 
+</script>
+<script>
+(function(){var b=document.querySelector(".progresso");function at(){var h=document.documentElement;var m=h.scrollHeight-innerHeight;b.style.transform="scaleX("+(m>0?scrollY/m:0)+")";}addEventListener("scroll",at,{passive:true});addEventListener("resize",at);at();})();
 </script>
 </body>
 </html>

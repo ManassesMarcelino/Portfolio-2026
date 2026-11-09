@@ -51,29 +51,33 @@
           <a class="projeto-item revela" href="futuremind.html" data-img="assets/futuremind-mockups.webp">
             <span class="n">01</span>
             <h3>FutureMind</h3>
-            <p>Terapia online desenhada a partir de uma pesquisa com 50 psicólogos. Melhor projeto do curso.</p>
+            <div class="desc"><p>Terapia online desenhada a partir de uma pesquisa com 50 psicólogos. Melhor projeto do curso.</p><span class="ver-case">Ver estudo de caso <i>→</i></span></div>
             <span class="ano">2025</span>
+            <span class="seta-circ" aria-hidden="true">→</span>
             <img class="thumb" src="assets/futuremind-mockups.webp" alt="" loading="lazy">
           </a>
           <a class="projeto-item revela" href="skyns.html" data-img="assets/sk-inicio.webp">
             <span class="n">02</span>
             <h3>SKYNS</h3>
-            <p>E-commerce de skincare personalizável, com uma máquina de IoT que prepara a fórmula.</p>
+            <div class="desc"><p>E-commerce de skincare personalizável, com uma máquina de IoT que prepara a fórmula.</p><span class="ver-case">Ver estudo de caso <i>→</i></span></div>
             <span class="ano">2025</span>
+            <span class="seta-circ" aria-hidden="true">→</span>
             <img class="thumb" src="assets/sk-inicio.webp" alt="" loading="lazy">
           </a>
           <a class="projeto-item revela" href="backup.html" data-img="assets/bk-dashboard.webp">
             <span class="n">03</span>
             <h3>Dígitro Backup</h3>
-            <p>Dashboard B2B com alertas no topo e erros que dizem o que fazer.</p>
+            <div class="desc"><p>Dashboard B2B com alertas no topo e erros que dizem o que fazer.</p><span class="ver-case">Ver estudo de caso <i>→</i></span></div>
             <span class="ano">2026</span>
+            <span class="seta-circ" aria-hidden="true">→</span>
             <img class="thumb" src="assets/bk-dashboard.webp" alt="" loading="lazy">
           </a>
           <a class="projeto-item revela" href="intelletotum.html" data-img="assets/it-tempo.webp">
             <span class="n">04</span>
             <h3>IntelleTotum</h3>
-            <p>A aba de análise do Guardião: milhares de registros viram padrões e pistas.</p>
+            <div class="desc"><p>A aba de análise do Guardião: milhares de registros viram padrões e pistas.</p><span class="ver-case">Ver estudo de caso <i>→</i></span></div>
             <span class="ano">2026</span>
+            <span class="seta-circ" aria-hidden="true">→</span>
             <img class="thumb" src="assets/it-tempo.webp" alt="" loading="lazy">
           </a>
         </div>
@@ -96,11 +100,18 @@
     <section id="sobre" class="secao">
       <div class="wrap">
         <div class="secao-titulo revela"><h2>Sobre</h2><span>De onde eu vim</span></div>
-        <div class="sobre-grid">
-          <p class="frase revela">Entrei na tecnologia por estratégia e fiquei por paixão. No design encontrei o que mais gosto: <em>fazer as perguntas certas e achar resposta pros problemas.</em></p>
-          <div class="sobre-lado revela" style="--atraso: .08s">
+        <div class="sobre-foto-grid">
+          <figure class="retrato revela">
+            <img src="assets/foto-cor.webp" alt="" class="cor" loading="lazy">
+            <img src="assets/foto-pb.webp" alt="Foto de Manassés Marcelino" class="pb" loading="lazy">
+            <figcaption>Manassés Marcelino · Florianópolis</figcaption>
+          </figure>
+          <div class="sobre-textos">
+            <p class="frase revela">Entrei na tecnologia por estratégia e fiquei por paixão. No design encontrei o que mais gosto: <em>fazer as perguntas certas e achar resposta pros problemas.</em></p>
+            <div class="sobre-lado revela" style="--atraso: .08s">
             <p>Comecei com uma bolsa no técnico em Desenvolvimento de Sistemas do SENAI/SC, porque não queria sair do ensino médio sem uma profissão. Na Softplan conheci a tecnologia por dentro, e no design achei um jeito mais criativo de resolver problemas.</p>
             <p>O que mais elogiam em mim é a comunicação: com o time, com quem usa e com quem vai desenvolver. Hoje curso Design na UNISUL, com formatura prevista em 2028.</p>
+          </div>
           </div>
         </div>
         <div class="trajetoria">
@@ -117,7 +128,7 @@
       <span class="rodape-rot revela">Contato</span>
       <h2 class="revela">Tem uma vaga?<br><a href="mailto:manassesmarcelino@gmail.com">Vamos conversar.</a></h2>
       <div class="rodape-links revela">
-        <a href="mailto:manassesmarcelino@gmail.com">manassesmarcelino@gmail.com</a>
+        <button type="button" class="copiar-email" data-email="manassesmarcelino@gmail.com"><span class="txt">manassesmarcelino@gmail.com</span><span class="acao">Copiar</span></button>
         <a href="https://www.linkedin.com/in/manasses-marcelino-ux" target="_blank" rel="noopener">LinkedIn ↗</a>
         <a href="curriculo.pdf" target="_blank" rel="noopener">Currículo em PDF ↗</a>
       </div>
@@ -125,7 +136,7 @@
     </div>
   </footer>
 
-  <div class="preview" aria-hidden="true"><img alt=""></div>
+  <div class="preview" aria-hidden="true"><img alt=""><span class="preview-selo">Ver case →</span></div>
   <script>
 // Interações leves: entrada no scroll, menu e prévia dos projetos.
 (function () {
@@ -195,6 +206,9 @@
   }
 })();
 
+</script>
+<script>
+document.querySelectorAll(".copiar-email").forEach(function(b){b.addEventListener("click",function(){var e=b.getAttribute("data-email");var ok=function(){var s=b.querySelector(".acao");s.textContent="Copiado!";b.classList.add("ok");setTimeout(function(){s.textContent="Copiar";b.classList.remove("ok");},2000);};if(navigator.clipboard){navigator.clipboard.writeText(e).then(ok,function(){location.href="mailto:"+e;});}else{location.href="mailto:"+e;}});});
 </script>
 </body>
 </html>
