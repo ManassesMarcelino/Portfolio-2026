@@ -1,214 +1,791 @@
 <!doctype html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-construir>
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Manassés Marcelino — UX/UI Designer</title>
-  <meta name="description" content="Portfólio de Manassés Marcelino, UX/UI Designer em Florianópolis. Produtos digitais, pesquisa, design systems e sistemas complexos.">
-  <meta name="theme-color" content="#F2F1EC">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Manassés Marcelino — UX/UI Designer">
-  <meta property="og:description" content="Portfólio de Manassés Marcelino, UX/UI Designer em Florianópolis.">
-  <meta property="og:image" content="https://manassesmarcelino.vercel.app/og.png">
-  <meta name="twitter:card" content="summary_large_image">
-  <link rel="stylesheet" href="styles.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Manassés Marcelino — UX/UI Designer</title>
+<meta property="og:type" content="website"><meta property="og:site_name" content="Manassés Marcelino"><meta property="og:title" content="Manassés Marcelino — UX/UI Designer"><meta property="og:description" content="UX/UI Designer em Florianópolis. Pesquiso, organizo fluxos e desenho interfaces que fazem sentido pra quem usa."><meta property="og:url" content="https://manassesmarcelino.vercel.app/"><meta property="og:image" content="https://manassesmarcelino.vercel.app/og.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:locale" content="pt_BR"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://manassesmarcelino.vercel.app/og.png">
+<meta name="description" content="UX/UI Designer em Florianópolis. Pesquiso, organizo fluxos e desenho interfaces que fazem sentido pra quem usa.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="icon" href="favicon.png" type="image/png" sizes="64x64"><link rel="apple-touch-icon" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200..800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css">
+<link rel="stylesheet" href="figma.css">
 </head>
 <body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="seta" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="cur" viewBox="0 0 16 16"><path d="M1 1l5.5 13 2-5.5L14 6.5z"/></symbol>
+</svg>
 
-  <header class="topo-site">
-    <div class="wrap">
-      <a href="#inicio" class="logo">Manassés Marcelino</a>
-      <nav class="menu">
-        <a href="#trabalhos">Trabalhos</a>
-        <a href="#processo">Processo</a>
-        <a href="#sobre">Sobre</a>
-      </nav>
-      <a href="#contato" class="cta-link">Vamos conversar</a>
+<header class="topo">
+  <div class="container">
+    <a href="index.html" class="marca"><svg class="logo-mm" viewBox="0 0 210 210" aria-hidden="true"><path class="lg-pin" d="M0 105C0 47.0101 47.0101 0 105 0C162.99 0 210 47.0101 210 105C210 162.99 162.99 210 105 210H18C8.05887 210 0 201.941 0 192V105Z"/><path class="lg-mm" d="M33.072 143V74.46H46.872L72.54 108.5H66.1L91.032 74.46H104.832V143H90.572V90.192L96.276 91.48L69.872 125.52H68.032L42.548 91.48L47.332 90.192V143H33.072ZM108.706 143V74.46H122.506L148.174 108.5H141.734L166.666 74.46H180.466V143H166.206V90.192L171.91 91.48L145.506 125.52H143.666L118.182 91.48L122.966 90.192V143H108.706Z"/></svg>Manassés Marcelino</a>
+    <nav class="menu" aria-label="Principal">
+      <a href="#projetos">Projetos</a><a href="#processo">Processo</a><a href="#trajetoria">Sobre mim</a><a href="#ajuda">Como ajudo</a><a href="#contato">Contato</a>
+    </nav>
+    <a href="#contato" class="btn btn-laranja btn-sm">Falar comigo</a>
+  </div>
+</header>
+
+<main>
+<!-- HERO -->
+<section class="hero">
+  <div class="grade-fundo" aria-hidden="true"></div>
+  <div class="container">
+    <div>
+      <div class="kicker" data-r>UX/UI Designer · Florianópolis</div>
+      <h1 class="titulo" data-varre data-camada="H1 · Título">
+        <span class="l"><span>Entendendo pessoas<span class="pt">,</span></span></span>
+        <span class="l"><span>simplificando</span></span>
+        <span class="l laranja"><span>sistemas</span></span>
+        <span class="l laranja"><span>complexos<span class="pt">.</span></span></span>
+      </h1>
+      <p class="linha-pixel" data-r style="--d:.45s">Pesquisa · Fluxos · Interfaces</p>
+      <p class="lead" data-r style="--d:.55s" data-camada="Texto">UX/UI Designer na Dígitro, em sistemas de investigação e de backup. Pesquiso, organizo fluxos e desenho interfaces que fazem sentido pra quem usa, do problema à entrega.</p>
+      <div class="acoes" data-r style="--d:.65s">
+        <a href="#projetos" class="btn btn-laranja" data-camada="Botão">Ver projetos <svg><use href="#seta"/></svg></a>
+        <a href="curriculo.pdf" class="btn btn-ghost" target="_blank" rel="noopener">Ver currículo (PDF)</a>
+      </div>
     </div>
-  </header>
 
-  <main id="inicio">
-    <section class="abertura">
-      <div class="wrap">
-        <div class="abertura-linha revela"><span>UX/UI Designer</span><span>Florianópolis · 2026</span></div>
-        <h1 class="nome-gigante revela"><span>Manassés</span><span>Marcelino<i>.</i></span></h1>
-        <div class="abertura-pe">
-          <div class="revela"><strong>Do problema à tela.</strong><p>Pesquiso, organizo fluxos e desenho interfaces que fazem sentido pra quem usa.</p></div>
-          <div class="revela" style="--atraso: .08s"><strong>Agora</strong><p>UX/UI na Dígitro, em sistemas de investigação e de backup.</p></div>
-          <div class="revela" style="--atraso: .16s"><strong>Disponível</strong><p>Para vagas de UX/UI Designer júnior.</p></div>
+    <div class="palco" data-r style="--d:.3s">
+      <div class="frame-foto" id="ff">
+        <span class="ff-nome"><svg viewBox="0 0 12 12"><path d="M3 0v12M9 0v12M0 3h12M0 9h12"/></svg>manasses.png</span>
+        <div class="ff-img"><img src="assets/foto-cor.webp" alt="Foto de Manassés Marcelino"></div>
+        <div class="ff-sel" aria-hidden="true">
+          <i class="h nw" data-h="nw"></i><i class="h ne" data-h="ne"></i><i class="h sw" data-h="sw"></i><i class="h se" data-h="se"></i>
+          <i class="h n" data-h="n"></i><i class="h s" data-h="s"></i><i class="h e" data-h="e"></i><i class="h w" data-h="w"></i>
         </div>
+        <span class="ff-tam" data-tam>320 × 380</span>
+        <div class="cursor lar dica"><svg><use href="#cur"/></svg><span>Arraste os cantos</span></div>
       </div>
-    </section>
 
-    <section id="trabalhos" class="secao">
-      <div class="wrap">
-        <div class="secao-titulo revela"><h2>Trabalhos selecionados</h2><span>04 projetos</span></div>
-        <div class="lista-projetos">
-          <a class="projeto-item revela" href="futuremind.html" data-img="assets/futuremind-mockups.webp">
-            <span class="n">01</span>
-            <h3>FutureMind</h3>
-            <div class="desc"><p>Terapia online desenhada a partir de uma pesquisa com 50 psicólogos. Melhor projeto do curso.</p><span class="ver-case">Ver estudo de caso <i>→</i></span></div>
-            <span class="ano">2025</span>
-            <span class="seta-circ" aria-hidden="true">→</span>
-            <img class="thumb" src="assets/futuremind-mockups.webp" alt="" loading="lazy">
-          </a>
-          <a class="projeto-item revela" href="skyns.html" data-img="assets/sk-inicio.webp">
-            <span class="n">02</span>
-            <h3>SKYNS</h3>
-            <div class="desc"><p>E-commerce de skincare personalizável, com uma máquina de IoT que prepara a fórmula.</p><span class="ver-case">Ver estudo de caso <i>→</i></span></div>
-            <span class="ano">2025</span>
-            <span class="seta-circ" aria-hidden="true">→</span>
-            <img class="thumb" src="assets/sk-inicio.webp" alt="" loading="lazy">
-          </a>
-          <a class="projeto-item revela" href="backup.html" data-img="assets/bk-dashboard.webp">
-            <span class="n">03</span>
-            <h3>Dígitro Backup</h3>
-            <div class="desc"><p>Dashboard B2B com alertas no topo e erros que dizem o que fazer.</p><span class="ver-case">Ver estudo de caso <i>→</i></span></div>
-            <span class="ano">2026</span>
-            <span class="seta-circ" aria-hidden="true">→</span>
-            <img class="thumb" src="assets/bk-dashboard.webp" alt="" loading="lazy">
-          </a>
-          <a class="projeto-item revela" href="intelletotum.html" data-img="assets/it-tempo.webp">
-            <span class="n">04</span>
-            <h3>IntelleTotum</h3>
-            <div class="desc"><p>A aba de análise do Guardião: milhares de registros viram padrões e pistas.</p><span class="ver-case">Ver estudo de caso <i>→</i></span></div>
-            <span class="ano">2026</span>
-            <span class="seta-circ" aria-hidden="true">→</span>
-            <img class="thumb" src="assets/it-tempo.webp" alt="" loading="lazy">
-          </a>
+      <div class="inspetor" data-camada="Painel · Design">
+        <div class="insp-abas"><b>Design</b><span>Protótipo</span><span>Inspecionar</span></div>
+        <div class="insp-sec">
+          <small>Frame</small>
+          <div class="insp-linha"><label>L <output data-w>320</output></label><label>A <output data-a>380</output></label></div>
         </div>
-      </div>
-    </section>
-
-    <section id="processo" class="secao">
-      <div class="wrap">
-        <div class="secao-titulo revela"><h2>Primeiro o problema.<br>Depois a tela.</h2><span>Como eu trabalho</span></div>
-        <div class="etapas">
-          <div class="revela"><b>01</b><strong>Descobrir</strong><p>Entendo o negócio, quem usa e as restrições antes de propor qualquer coisa.</p><small>Entrevistas · Questionários · Benchmarking · Jornadas</small></div>
-          <div class="revela" style="--atraso: .08s"><b>02</b><strong>Definir</strong><p>Transformo o que aprendi em públicos, fluxos e no que cada tela precisa resolver.</p><small>Fluxos · Arquitetura · Wireframes</small></div>
-          <div class="revela" style="--atraso: .16s"><b>03</b><strong>Desenvolver</strong><p>Interfaces, componentes e protótipos que nascem juntos e são testados cedo.</p><small>Interfaces · Design system · Protótipos · Testes</small></div>
-          <div class="revela" style="--atraso: .24s"><b>04</b><strong>Entregar</strong><p>Estados, erros e especificações documentados, pra tela sair do Figma como foi pensada.</p><small>Estados e erros · Especificação · Handoff</small></div>
+        <div class="insp-sec">
+          <small>Arredondamento <output data-raio-v>24</output></small>
+          <input type="range" min="0" max="200" value="24" data-raio aria-label="Arredondamento da foto">
         </div>
-        <p class="nota revela">Uso IA pra pesquisar, explorar alternativas e prototipar mais rápido. A decisão final é sempre minha.</p>
-      </div>
-    </section>
-
-    <section id="sobre" class="secao">
-      <div class="wrap">
-        <div class="secao-titulo revela"><h2>Sobre</h2><span>De onde eu vim</span></div>
-        <div class="sobre-foto-grid">
-          <figure class="retrato revela">
-            <img src="assets/foto-cor.webp" alt="" class="cor" loading="lazy">
-            <img src="assets/foto-pb.webp" alt="Foto de Manassés Marcelino" class="pb" loading="lazy">
-            <figcaption>Manassés Marcelino · Florianópolis</figcaption>
-          </figure>
-          <div class="sobre-textos">
-            <p class="frase revela">Entrei na tecnologia por estratégia e fiquei por paixão. No design encontrei o que mais gosto: <em>fazer as perguntas certas e achar resposta pros problemas.</em></p>
-            <div class="sobre-lado revela" style="--atraso: .08s">
-            <p>Comecei com uma bolsa no técnico em Desenvolvimento de Sistemas do SENAI/SC, porque não queria sair do ensino médio sem uma profissão. Na Softplan conheci a tecnologia por dentro, e no design achei um jeito mais criativo de resolver problemas.</p>
-            <p>O que mais elogiam em mim é a comunicação: com o time, com quem usa e com quem vai desenvolver. Hoje curso Design na UNISUL, com formatura prevista em 2028.</p>
-          </div>
+        <div class="insp-sec">
+          <small>Cor de destaque</small>
+          <div class="cores" role="radiogroup" aria-label="Cor de destaque">
+            <button style="--c:#FF6A1A" class="on" data-cor="#FF6A1A" aria-label="Laranja"></button>
+            <button style="--c:#9747FF" data-cor="#9747FF" aria-label="Roxo"></button>
+            <button style="--c:#0D99FF" data-cor="#0D99FF" aria-label="Azul"></button>
+            <button style="--c:#14AE5C" data-cor="#14AE5C" aria-label="Verde"></button>
+            <button style="--c:#F24E1E" data-cor="#F24E1E" aria-label="Vermelho"></button>
           </div>
         </div>
-        <div class="trajetoria">
-          <div class="revela"><span>2023 – 2025</span><strong>Softplan</strong><p>Jovem aprendiz em People Operations.</p></div>
-          <div class="revela"><span>2025 – 2026</span><strong>CIEE SC</strong><p>Estágio em design gráfico, wireframes e protótipos.</p></div>
-          <div class="revela"><span>2026 – hoje</span><strong>Dígitro Tecnologia</strong><p>Estágio em UX/UI: sistemas corporativos, design system e handoff.</p></div>
+        <div class="insp-sec insp-check"><label><input type="checkbox" data-pb> Preto e branco</label></div>
+        <a href="#projetos" class="insp-play"><svg viewBox="0 0 24 24"><path d="M7 4l13 8-13 8z"/></svg>Apresentar projetos</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAIXA -->
+<div class="assets" aria-label="Onde já passei">
+  <div class="assets-cab container"><span class="ab on">Assets</span><span class="ab">Camadas</span><span class="caminho">Bibliotecas locais / <b>Onde já passei</b></span><span class="busca">⌕ Buscar componentes</span></div>
+  <div class="trilho" data-r>
+    <span class="comp"><svg viewBox="0 0 24 24" class="ic-comp"><path d="M12 2l3.5 3.5L12 9 8.5 5.5zM12 15l3.5 3.5L12 22l-3.5-3.5zM5.5 8.5L9 12l-3.5 3.5L2 12zM18.5 8.5L22 12l-3.5 3.5L15 12z"/></svg><b>Dígitro Tecnologia</b><small>UX/UI · 2026</small></span>
+    <span class="comp"><svg viewBox="0 0 24 24" class="ic-comp"><path d="M12 2l3.5 3.5L12 9 8.5 5.5zM12 15l3.5 3.5L12 22l-3.5-3.5zM5.5 8.5L9 12l-3.5 3.5L2 12zM18.5 8.5L22 12l-3.5 3.5L15 12z"/></svg><b>CIEE SC</b><small>Design gráfico · 2025</small></span>
+    <span class="comp"><svg viewBox="0 0 24 24" class="ic-comp"><path d="M12 2l3.5 3.5L12 9 8.5 5.5zM12 15l3.5 3.5L12 22l-3.5-3.5zM5.5 8.5L9 12l-3.5 3.5L2 12zM18.5 8.5L22 12l-3.5 3.5L15 12z"/></svg><b>Softplan</b><small>People Ops · 2023</small></span>
+    <span class="comp"><svg viewBox="0 0 24 24" class="ic-comp"><path d="M12 2l3.5 3.5L12 9 8.5 5.5zM12 15l3.5 3.5L12 22l-3.5-3.5zM5.5 8.5L9 12l-3.5 3.5L2 12zM18.5 8.5L22 12l-3.5 3.5L15 12z"/></svg><b>SENAI/SC</b><small>Técnico · Dev. de Sistemas</small></span>
+    <span class="comp"><svg viewBox="0 0 24 24" class="ic-comp"><path d="M12 2l3.5 3.5L12 9 8.5 5.5zM12 15l3.5 3.5L12 22l-3.5-3.5zM5.5 8.5L9 12l-3.5 3.5L2 12zM18.5 8.5L22 12l-3.5 3.5L15 12z"/></svg><b>UNISUL</b><small>Design · cursando</small></span>
+    <span class="comp"><svg viewBox="0 0 24 24" class="ic-comp"><path d="M12 2l3.5 3.5L12 9 8.5 5.5zM12 15l3.5 3.5L12 22l-3.5-3.5zM5.5 8.5L9 12l-3.5 3.5L2 12zM18.5 8.5L22 12l-3.5 3.5L15 12z"/></svg><b>Dígitro Tecnologia</b><small>UX/UI · 2026</small></span>
+    <span class="comp"><svg viewBox="0 0 24 24" class="ic-comp"><path d="M12 2l3.5 3.5L12 9 8.5 5.5zM12 15l3.5 3.5L12 22l-3.5-3.5zM5.5 8.5L9 12l-3.5 3.5L2 12zM18.5 8.5L22 12l-3.5 3.5L15 12z"/></svg><b>CIEE SC</b><small>Design gráfico · 2025</small></span>
+    <span class="comp"><svg viewBox="0 0 24 24" class="ic-comp"><path d="M12 2l3.5 3.5L12 9 8.5 5.5zM12 15l3.5 3.5L12 22l-3.5-3.5zM5.5 8.5L9 12l-3.5 3.5L2 12zM18.5 8.5L22 12l-3.5 3.5L15 12z"/></svg><b>Softplan</b><small>People Ops · 2023</small></span>
+    <span class="comp"><svg viewBox="0 0 24 24" class="ic-comp"><path d="M12 2l3.5 3.5L12 9 8.5 5.5zM12 15l3.5 3.5L12 22l-3.5-3.5zM5.5 8.5L9 12l-3.5 3.5L2 12zM18.5 8.5L22 12l-3.5 3.5L15 12z"/></svg><b>SENAI/SC</b><small>Técnico · Dev. de Sistemas</small></span>
+    <span class="comp"><svg viewBox="0 0 24 24" class="ic-comp"><path d="M12 2l3.5 3.5L12 9 8.5 5.5zM12 15l3.5 3.5L12 22l-3.5-3.5zM5.5 8.5L9 12l-3.5 3.5L2 12zM18.5 8.5L22 12l-3.5 3.5L15 12z"/></svg><b>UNISUL</b><small>Design · cursando</small></span>
+  </div>
+</div>
+
+<!-- 01 PROJETOS -->
+<section class="secao" id="projetos" data-secao="Projetos">
+  <div class="container">
+    <div class="cab"><svg class="noodle" viewBox="0 0 200 60" preserveAspectRatio="none" aria-hidden="true"><circle cx="6" cy="50" r="5"/><path d="M6 50 C 80 50, 110 10, 186 10"/><path class="ponta" d="M178 4l9 6-9 6"/></svg>
+      <div>
+        <div class="rotulo" data-r><b>01</b>Projetos</div>
+        <h2 class="t" data-varre><span class="l"><span>Estudos de caso<span class="pt">,</span></span></span><span class="l"><span>do problema</span></span><span class="l"><span><span class="pill-ico"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>à tela</span></span></h2>
+      </div>
+      <p data-r style="--d:.2s">Cada projeto mostra o problema, a pesquisa, as decisões e o que mudou. <b>Os números vêm de testes reais com usuários.</b></p>
+    </div>
+
+    <div class="controles" data-r>
+      <span class="contador" data-contador>1<i>•</i>4</span>
+      <button class="seta-btn" data-ant aria-label="Projeto anterior"><svg viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></svg></button>
+      <button class="seta-btn vai" data-prox aria-label="Próximo projeto"><svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg></button>
+    </div>
+
+    <div class="carrossel" data-carrossel tabindex="0" aria-roledescription="carrossel" data-r>
+      <div class="trilho-casos">
+
+        <article class="caso">
+          <div class="brilho"></div>
+          <div>
+            <div class="chips"><span class="chip"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5h8v2"/></svg>Case 01</span><span class="chip">2025</span></div>
+            <h3 data-camada="H3 · Título">FutureMind: terapia online fácil de começar e segura de continuar</h3>
+            <p>Psicólogos atendiam juntando site, WhatsApp, Meet e planilha. Ouvi 50 deles antes de desenhar, e o resultado foi uma plataforma única com agenda, chat, vídeo e pagamento. Melhor projeto do curso.</p>
+            <div class="quem"><span class="av">SE</span><div><b>SENAI/SC · em equipe</b><small>Líder de design (UX/UI)</small></div></div>
+            <a href="futuremind.html" class="link-seta" data-camada="Link">Ver o case <svg><use href="#seta"/></svg></a>
+            <div class="metrica"><b data-conta>9</b><span>de 10 agendaram sozinhos,<br>em 60% menos tempo</span></div>
+          </div>
+          <div>
+            <div class="janela-f"><div class="barra"><i></i><i></i><i></i><span>FutureMind</span><em>271 telas</em></div>
+              <div class="area"><img src="assets/fm-notebook.webp" alt="Área do paciente do FutureMind"><div class="sel" data-tam="1440 × 900"></div>
+                <div class="cursor lar c1"><svg><use href="#cur"/></svg><span>Manassés</span></div>
+                <div class="cursor vio c2"><svg><use href="#cur"/></svg><span>Psicóloga</span></div>
+              </div></div>
+            <div class="info-caso"><div class="chips"><span class="chip">Pesquisa</span><span class="chip">Design system</span><span class="chip">Saúde</span></div><small>Web, tablet e mobile</small></div>
+          </div>
+        </article>
+
+        <article class="caso">
+          <div class="brilho"></div>
+          <div>
+            <div class="chips"><span class="chip"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5h8v2"/></svg>Case 02</span><span class="chip">2025</span></div>
+            <h3 data-camada="H3 · Título">SKYNS: skincare sem tentativa e erro pra peles sensíveis</h3>
+            <p>Um quiz descobre o tipo de pele e o "Monte o seu" só deixa combinar ativos seguros. Uma máquina de IoT prepara a fórmula na hora.</p>
+            <div class="quem"><span class="av">SE</span><div><b>SENAI/SC · em equipe</b><small>UX/UI Designer</small></div></div>
+            <a href="skyns.html" class="link-seta" data-camada="Link">Ver o case <svg><use href="#seta"/></svg></a>
+            <div class="metrica"><b data-conta>7</b><span>de 8 montaram a fórmula sozinhos,<br>em menos de 2 minutos</span></div>
+          </div>
+          <div>
+            <div class="janela-f"><div class="barra"><i></i><i></i><i></i><span>SKYNS</span><em>E-commerce</em></div>
+              <div class="area"><img src="assets/sk-inicio.webp" alt="Página inicial da SKYNS"><div class="sel" data-tam="1440 × 1024"></div>
+                <div class="cursor lar c1"><svg><use href="#cur"/></svg><span>Manassés</span></div>
+                <div class="cursor vio c2"><svg><use href="#cur"/></svg><span>Cliente</span></div>
+              </div></div>
+            <div class="info-caso"><div class="chips"><span class="chip">Quiz</span><span class="chip">E-commerce</span><span class="chip">IoT</span></div><small>Web e app</small></div>
+          </div>
+        </article>
+
+        <article class="caso">
+          <div class="brilho"></div>
+          <div>
+            <div class="chips"><span class="chip"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5h8v2"/></svg>Case 03</span><span class="chip">2026</span></div>
+            <h3 data-camada="H3 · Título">Dígitro Backup: saber em segundos se o backup rodou</h3>
+            <p>O status ficava espalhado em logs e e-mails técnicos. O dashboard novo abre com os alertas, configura em abas com orientação e mostra erros que dizem o que fazer.</p>
+            <div class="quem"><span class="av">DI</span><div><b>Dígitro Tecnologia</b><small>UX/UI Designer</small></div></div>
+            <a href="backup.html" class="link-seta" data-camada="Link">Ver o case <svg><use href="#seta"/></svg></a>
+            <div class="metrica"><b><span data-conta>8</span>s</b><span>pra responder "está tudo bem?"<br>(antes, uns 3 min nos logs)</span></div>
+          </div>
+          <div>
+            <div class="janela-f"><div class="barra"><i></i><i></i><i></i><span>Dígitro Backup</span><em>B2B</em></div>
+              <div class="area"><img src="assets/bk-dashboard.webp" alt="Dashboard do Dígitro Backup"><div class="sel" data-tam="1920 × 1080"></div>
+                <div class="cursor lar c1"><svg><use href="#cur"/></svg><span>Manassés</span></div>
+                <div class="cursor vio c2"><svg><use href="#cur"/></svg><span>Suporte</span></div>
+              </div></div>
+            <div class="info-caso"><div class="chips"><span class="chip">B2B</span><span class="chip">Dashboard</span><span class="chip">Estados e erros</span></div><small>Web (sistema corporativo)</small></div>
+          </div>
+        </article>
+
+        <article class="caso">
+          <div class="brilho"></div>
+          <div>
+            <div class="chips"><span class="chip"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5h8v2"/></svg>Case 04</span><span class="chip">2026</span></div>
+            <h3 data-camada="H3 · Título">IntelleTotum: milhares de registros viram pistas</h3>
+            <p>Analisar dados no Guardião dependia de exportar planilhas. A aba nova traz seis números de contexto e cinco visões que respondem às 4 perguntas de toda investigação.</p>
+            <div class="quem"><span class="av">DI</span><div><b>Dígitro Tecnologia</b><small>UX/UI Designer</small></div></div>
+            <a href="intelletotum.html" class="link-seta" data-camada="Link">Ver o case <svg><use href="#seta"/></svg></a>
+            <div class="metrica"><b>&lt;<span data-conta>1</span>min</b><span>pra achar o horário de pico<br>(antes, 25 min na planilha)</span></div>
+          </div>
+          <div>
+            <div class="janela-f"><div class="barra"><i></i><i></i><i></i><span>IntelleTotum</span><em>Dados</em></div>
+              <div class="area"><img src="assets/it-tempo.webp" alt="Visão de tempo do IntelleTotum"><div class="sel" data-tam="1920 × 1080"></div>
+                <div class="cursor lar c1"><svg><use href="#cur"/></svg><span>Manassés</span></div>
+                <div class="cursor vio c2"><svg><use href="#cur"/></svg><span>Investigador</span></div>
+              </div></div>
+            <div class="info-caso"><div class="chips"><span class="chip">Dados</span><span class="chip">Visualização</span><span class="chip">Investigação</span></div><small>Web (sistema corporativo)</small></div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+    <a href="futuremind.html" class="link-seta ver-todos" data-r>Começar pelo primeiro case <svg><use href="#seta"/></svg></a>
+  </div>
+</section>
+
+<!-- 02 PROCESSO -->
+<section class="secao" id="processo" data-secao="Processo">
+  <div class="container">
+    <div class="cab"><svg class="noodle" viewBox="0 0 200 60" preserveAspectRatio="none" aria-hidden="true"><circle cx="6" cy="50" r="5"/><path d="M6 50 C 80 50, 110 10, 186 10"/><path class="ponta" d="M178 4l9 6-9 6"/></svg>
+      <div>
+        <div class="rotulo" data-r><b>02</b>Como eu trabalho</div>
+        <h2 class="t" data-varre><span class="l"><span>Do problema</span></span><span class="l"><span>à <span class="pill-ico"><svg viewBox="0 0 24 24"><path d="M12 2l3.5 3.5L12 9 8.5 5.5zM12 15l3.5 3.5L12 22l-3.5-3.5zM5.5 8.5L9 12l-3.5 3.5L2 12zM18.5 8.5L22 12l-3.5 3.5L15 12z"/></svg></span>entrega</span></span></h2>
+      </div>
+      <p data-r style="--d:.2s">Cinco etapas que eu sigo em todo projeto, da primeira conversa ao que mudou depois da entrega. <b>Nenhuma é pulada.</b></p>
+    </div>
+
+    <div class="bento">
+      <div class="cartao largo" data-r><div class="brilho"></div>
+        <span class="chip"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 1 1 3.5 2.3c-.6.3-1 .9-1 1.6v.6M12 17h.01"/></svg>01 · Descobrir</span>
+        <h3 data-camada="H3">Entender antes de desenhar</h3>
+        <p>O negócio, quem usa, as restrições e onde a experiência trava hoje.</p>
+        <div class="fluxo-mini"><span>Negócio</span><i></i><span>Usuário</span><i></i><span class="on">Dor</span></div>
+      </div>
+      <div class="cartao largo vio" data-r style="--d:.1s"><div class="brilho"></div>
+        <span class="chip"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>02 · Definir</span>
+        <h3 data-camada="H3">Decidir com evidência</h3>
+        <p>Entrevistas e questionários viram públicos, fluxos e o que cada tela precisa resolver.</p>
+        <div class="chips"><span class="chip leve">Entrevistas</span><span class="chip leve">Questionários</span><span class="chip leve">Benchmarking</span><span class="chip leve">Jornadas</span></div>
+      </div>
+      <div class="cartao" data-r><div class="brilho"></div>
+        <span class="chip"><svg viewBox="0 0 24 24"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3z"/></svg>03 · Prototipar</span>
+        <h3 data-camada="H3">Testar cedo</h3>
+        <p>Wireframes e protótipos validados com quem usa antes do visual final.</p>
+      </div>
+      <div class="cartao" data-r style="--d:.1s"><div class="brilho"></div>
+        <span class="chip"><svg viewBox="0 0 24 24"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9z"/><path d="M12 12l8-4.5M12 12v9M12 12L4 7.5"/></svg>04 · Entregar</span>
+        <h3 data-camada="H3">Construir junto do dev</h3>
+        <p>Design system, estados, erros e handoff documentados até a entrega.</p>
+        <div class="orbita"><span>DS</span><span class="on">UI</span><span class="centro"><svg viewBox="0 0 24 24"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9z"/><path d="M12 12l8-4.5M12 12v9M12 12L4 7.5"/></svg></span><span>UX</span><span>Dev</span></div>
+      </div>
+      <div class="cartao" data-r style="--d:.2s"><div class="brilho"></div>
+        <span class="chip"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>05 · Medir</span>
+        <h3 data-camada="H3">Ver o que mudou</h3>
+        <p>Testes de usabilidade com tempo e taxa de sucesso, antes e depois.</p>
+        <div class="barras"><i style="--h:22%"></i><i style="--h:40%"></i><i style="--h:34%"></i><i style="--h:56%"></i><i style="--h:92%"></i></div>
+      </div>
+
+      <div class="cartao ia-card" data-r><div class="brilho"></div>
+        <div>
+          <div class="pixel" style="font-size:12px;color:#cfcfca">IA no dia a dia</div>
+          <h3 data-camada="H3">Com IA em cada etapa.<br><span class="laranja">A decisão continua minha.</span></h3>
+          <p>Uso IA como parte do processo, não como atalho: ela amplia o que eu consigo pesquisar, explorar e conferir, e as decisões continuam sendo de design.</p>
+        </div>
+        <div class="ia-lista">
+          <div><span class="pixel" style="color:#fb923c">01</span><div><b style="color:#fb923c">Descobrir</b><p>Organizo o contexto do negócio e da pesquisa antes das conversas.</p></div></div>
+          <div><span class="pixel" style="color:var(--ciano)">02</span><div><b style="color:var(--ciano)">Definir</b><p>Respostas de questionário viram padrões e perguntas melhores.</p></div></div>
+          <div><span class="pixel" style="color:var(--rosa)">03</span><div><b style="color:var(--rosa)">Prototipar</b><p>Mais caminhos explorados em menos tempo, e protótipos navegáveis mais cedo.</p></div></div>
+          <div><span class="pixel" style="color:var(--violeta)">04</span><div><b style="color:var(--violeta)">Entregar</b><p>Estados, erros e textos revisados antes de chegar no dev.</p></div></div>
+          <div><span class="pixel" style="color:var(--azul)">05</span><div><b style="color:var(--azul)">Medir</b><p>Os resultados dos testes organizados pra próxima rodada.</p></div></div>
         </div>
       </div>
-    </section>
-  </main>
-
-  <footer id="contato" class="rodape">
-    <div class="wrap">
-      <span class="rodape-rot revela">Contato</span>
-      <h2 class="revela">Tem uma vaga?<br><a href="mailto:manassesmarcelino@gmail.com">Vamos conversar.</a></h2>
-      <div class="rodape-links revela">
-        <button type="button" class="copiar-email" data-email="manassesmarcelino@gmail.com"><span class="txt">manassesmarcelino@gmail.com</span><span class="acao">Copiar</span></button>
-        <a href="https://www.linkedin.com/in/manasses-marcelino-ux" target="_blank" rel="noopener">LinkedIn ↗</a>
-        <a href="curriculo.pdf" target="_blank" rel="noopener">Currículo em PDF ↗</a>
-      </div>
-      <div class="rodape-fim"><span>© 2026 Manassés Marcelino</span><a href="#inicio">Voltar ao topo ↑</a></div>
     </div>
-  </footer>
+  </div>
+</section>
 
-  <div class="preview" aria-hidden="true"><img alt=""><span class="preview-selo">Ver case →</span></div>
-  <script>
-// Interações leves: entrada no scroll, menu e prévia dos projetos.
+<!-- 03 TRAJETÓRIA -->
+<section class="secao" id="trajetoria" data-secao="Trajetória">
+  <div class="container traj">
+    <div class="fixo">
+      <div class="rotulo" data-r><b>03</b>Trajetória</div>
+      <h2 class="t" data-varre><span class="l"><span>Minha trajetória<span class="pt">,</span></span></span><span class="l"><span>por camada</span></span></h2>
+      <p data-r style="--d:.2s">Abra a camada que você quer conhecer.</p>
+      <a href="curriculo.pdf" target="_blank" rel="noopener" class="mais-sobre" data-r style="--d:.3s"><span class="b"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span><span><small>Currículo completo</small><b>Manassés Marcelino</b></span></a>
+    </div>
+    <div class="temas" data-r style="--d:.15s">
+      <div class="temas-cab"><b>Camadas</b><span>Página 1 · Trajetória</span></div>
+      <div class="tema aberto">
+        <button class="tema-cab" aria-expanded="true"><svg class="caret" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg><svg class="ic-frame" viewBox="0 0 12 12"><path d="M3 0v12M9 0v12M0 3h12M0 9h12"/></svg><span><b>Sobre mim</b><small>Da tecnologia por estratégia ao design por paixão.</small></span><svg class="olho" viewBox="0 0 24 24"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></button>
+        <div class="tema-corpo"><div><div class="dentro"><p>Sempre fui ligado à criatividade. Desde pequeno passei por aulas de teatro e de arte, e foi ali que aprendi a observar as pessoas, a me expressar e a criar a partir do que eu sentia.</p><p>Entrei na tecnologia por estratégia: ganhei bolsa no técnico em Desenvolvimento de Sistemas do SENAI/SC porque não queria sair do ensino médio sem uma profissão. E foi lá, no meio do código, que juntei o útil ao agradável: entendi a tecnologia, vi que queria trabalhar com ela e percebi que o design, que sempre esteve comigo, era o meu jeito de fazer parte disso. Depois passei pela Softplan, em People Operations, e pelo marketing do CIEE SC, com design gráfico.</p><p>Hoje sou UX/UI Designer na Dígitro, onde trabalho em sistemas B2B de investigação e de backup, e curso Bacharelado em Design na UNISUL. O que mais me move é entender a dificuldade de quem usa e transformar isso em algo mais simples. Por isso escuto muito, pergunto bastante e gosto de trabalhar perto de quem vai desenvolver.</p><p>Meu objetivo é seguir me aperfeiçoando até chegar à liderança, cuidando de pessoas e de times de design. Acredito que dá pra fazer isso do mesmo jeito que faço design: ouvindo primeiro.</p></div></div></div>
+      </div>
+      <div class="tema">
+        <button class="tema-cab" aria-expanded="false"><svg class="caret" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg><svg class="ic-frame" viewBox="0 0 12 12"><path d="M3 0v12M9 0v12M0 3h12M0 9h12"/></svg><span><b>Experiência</b><small>Hoje: UX/UI na Dígitro. Antes: CIEE SC e Softplan.</small></span><svg class="olho" viewBox="0 0 24 24"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></button>
+        <div class="tema-corpo"><div><div class="dentro"><div class="filhos"><div><span>2026 – hoje</span><b>Dígitro Tecnologia</b><p>Estágio em UX/UI. Projetei o Dígitro Backup e o IntelleTotum, proponho melhorias de usabilidade no Guardião Financeiro e no SIMBA e crio componentes, ícones e padrões do design system.</p></div><div><span>2025 – 2026</span><b>CIEE SC</b><p>Estágio em design gráfico no Marketing: campanhas, redes sociais e apresentações, com apoio em wireframes e protótipos.</p></div><div><span>2023 – 2025</span><b>Softplan</b><p>Jovem aprendiz em People Operations, numa empresa de software.</p></div></div></div></div></div>
+      </div>
+      <div class="tema">
+        <button class="tema-cab" aria-expanded="false"><svg class="caret" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg><svg class="ic-frame" viewBox="0 0 12 12"><path d="M3 0v12M9 0v12M0 3h12M0 9h12"/></svg><span><b>Competências em prática</b><small>Pesquisa, interface, métodos ágeis e tecnologia.</small></span><svg class="olho" viewBox="0 0 24 24"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></button>
+        <div class="tema-corpo"><div><div class="dentro"><p>Transformo problema em tela com pesquisa, fluxo e protótipo, sempre perto de Produto e Desenvolvimento. Como venho do desenvolvimento, falo a língua de quem implementa, e isso deixa o handoff mais simples e as soluções mais viáveis.</p><div class="grupo-comp"><small>Pesquisa e estratégia</small><div class="chips"><span class="chip leve">Discovery</span><span class="chip leve">Pesquisa com usuários</span><span class="chip leve">Testes de usabilidade</span><span class="chip leve">Jornada do usuário</span><span class="chip leve">Arquitetura de informação</span><span class="chip leve">Análise de interfaces</span></div></div><div class="grupo-comp"><small>Interface e sistema</small><div class="chips"><span class="chip leve">Figma</span><span class="chip leve">Design system</span><span class="chip leve">Componentes e padrões</span><span class="chip leve">Wireframes</span><span class="chip leve">Prototipação</span><span class="chip leve">User flows</span><span class="chip leve">Cenários de erro</span><span class="chip leve">Dashboards e KPIs</span></div></div><div class="grupo-comp"><small>Métodos ágeis e colaboração</small><div class="chips"><span class="chip leve">Scrum</span><span class="chip leve">Trabalho em sprints</span><span class="chip leve">Squad com Produto e Dev</span><span class="chip leve">Handoff</span><span class="chip leve">Documentação de design</span></div></div><div class="grupo-comp"><small>Tecnologia</small><div class="chips"><span class="chip leve">HTML, CSS e JavaScript</span><span class="chip leve">React</span><span class="chip leve">IA no processo</span></div></div></div></div></div>
+      </div>
+      <div class="tema">
+        <button class="tema-cab" aria-expanded="false"><svg class="caret" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg><svg class="ic-frame" viewBox="0 0 12 12"><path d="M3 0v12M9 0v12M0 3h12M0 9h12"/></svg><span><b>Formação</b><small>Cursando Design na UNISUL e técnico no SENAI/SC.</small></span><svg class="olho" viewBox="0 0 24 24"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></button>
+        <div class="tema-corpo"><div><div class="dentro"><p>No SENAI aprendi a pensar como quem desenvolve, e isso hoje facilita muito a conversa no handoff. Lá, o FutureMind foi eleito o melhor projeto do curso. Na UNISUL eu aprofundo a parte de design.</p></div></div></div>
+      </div>
+      <div class="tema">
+        <button class="tema-cab" aria-expanded="false"><svg class="caret" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg><svg class="ic-frame" viewBox="0 0 12 12"><path d="M3 0v12M9 0v12M0 3h12M0 9h12"/></svg><span><b>Cursos e idiomas</b><small>Udemy, Coursera, PUCRS e SENAI. Inglês intermediário.</small></span><svg class="olho" viewBox="0 0 24 24"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></button>
+        <div class="tema-corpo"><div><div class="dentro"><div class="filhos"><div><span>Udemy · 2026</span><b>PRO FIGMA | UI Design com Figma do Zero ao Especialista</b></div><div><span>Coursera · abr. 2025</span><b>Foundations of User Experience (UX) Design</b></div><div><span>PUCRS · abr. 2025</span><b>Extensão em Design Centrado no Usuário</b></div><div><span>PUCRS · abr. 2025</span><b>Extensão em História do Design, Estética e Estilos de Design</b></div><div><span>SENAI/SC · 2024–2025</span><b>Assistente de Desenvolvedor Back-End</b><p>Desenvolvimento de Sistemas (200h), Teste de Sistemas (60h), Qualidade e Produtividade (16h) e Sustentabilidade nos Processos Industriais (8h).</p></div><div><span>SENAI/SC · dez. 2024</span><b>Assistente de Programador e Modelador de Sistemas</b></div><div><span>SENAI/SC · dez. 2024</span><b>Fundamentos de Lógica de Programação</b></div><div><span>Idioma</span><b>Inglês intermediário, em formação</b></div></div></div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 04 COMO POSSO AJUDAR -->
+<section class="secao" id="ajuda" data-secao="Como posso ajudar">
+  <div class="container">
+    <div class="cab"><svg class="noodle" viewBox="0 0 200 60" preserveAspectRatio="none" aria-hidden="true"><circle cx="6" cy="50" r="5"/><path d="M6 50 C 80 50, 110 10, 186 10"/><path class="ponta" d="M178 4l9 6-9 6"/></svg>
+      <div>
+        <div class="rotulo" data-r><b>04</b>Como posso ajudar</div>
+        <h2 class="t" data-varre><span class="l"><span>Como posso ajudar?</span></span></h2>
+      </div>
+      <p data-r style="--d:.2s">Aberto a novas oportunidades em UX/UI. Presencial em Florianópolis, híbrido ou remoto.</p>
+    </div>
+    <div class="ajuda">
+      <div class="cartao cheio" data-r><span class="chip">Para empresas</span><h3>Vaga em UX/UI</h3><p>Pesquisa, fluxos, interfaces e design system em produtos digitais, com experiência em sistemas corporativos B2B.</p><a href="#contato" class="link-seta">Falar sobre uma vaga <svg><use href="#seta"/></svg></a></div>
+      <div class="cartao" data-r style="--d:.1s"><div class="brilho"></div><span class="chip">Para projetos</span><h3>Projetos e freelas</h3><p>Pesquisa, interfaces e protótipos pra tirar uma ideia do papel. Me conta o produto, o problema e o prazo.</p><a href="#contato" class="link-seta">Falar sobre um projeto <svg><use href="#seta"/></svg></a></div>
+    </div>
+    <div class="faq-cab" data-r><h3>Comentários <span class="qtd">5</span></h3><div class="controles" style="margin:0"><span class="contador" data-faq-cont>1<i>•</i>5</span><button class="seta-btn" data-faq-ant aria-label="Anterior"><svg viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></svg></button><button class="seta-btn vai" data-faq-prox aria-label="Próxima"><svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg></button></div></div>
+    <div class="faq-trilho" data-r>
+      <div class="coment">
+        <div class="pin" style="--c:#9747FF">1</div>
+        <div class="balao">
+          <div class="quem-c"><span class="av-c" style="--c:#9747FF">R</span><b>Recrutador(a)</b><small>agora</small></div>
+          <p class="perg">Que tipo de vaga você procura?</p>
+          <div class="resp"><div class="quem-c"><span class="av-c eu">M</span><b>Manassés</b><small>1 min</small></div><p>UX/UI Designer júnior, em produto digital. Tenho experiência com sistemas corporativos B2B e com produtos pra cliente final.</p></div>
+          <div class="responder">Responder…<span>↵</span></div>
+        </div>
+      </div>
+      <div class="coment">
+        <div class="pin" style="--c:#0D99FF">2</div>
+        <div class="balao">
+          <div class="quem-c"><span class="av-c" style="--c:#0D99FF">R</span><b>Recrutador(a)</b><small>agora</small></div>
+          <p class="perg">Como você trabalha com o time de dev?</p>
+          <div class="resp"><div class="quem-c"><span class="av-c eu">M</span><b>Manassés</b><small>1 min</small></div><p>Fiz técnico em Desenvolvimento de Sistemas, então falo a língua do dev. Entrego estados, erros e especificações no Figma.</p></div>
+          <div class="responder">Responder…<span>↵</span></div>
+        </div>
+      </div>
+      <div class="coment">
+        <div class="pin" style="--c:#14AE5C">3</div>
+        <div class="balao">
+          <div class="quem-c"><span class="av-c" style="--c:#14AE5C">R</span><b>Recrutador(a)</b><small>agora</small></div>
+          <p class="perg">Você trabalha com design system?</p>
+          <div class="resp"><div class="quem-c"><span class="av-c eu">M</span><b>Manassés</b><small>1 min</small></div><p>Sim. No FutureMind montei 97 componentes e 50 tokens, e na Dígitro uso e evoluo o design system dos produtos.</p></div>
+          <div class="responder">Responder…<span>↵</span></div>
+        </div>
+      </div>
+      <div class="coment">
+        <div class="pin" style="--c:#F24E1E">4</div>
+        <div class="balao">
+          <div class="quem-c"><span class="av-c" style="--c:#F24E1E">R</span><b>Recrutador(a)</b><small>agora</small></div>
+          <p class="perg">Como você mede resultado?</p>
+          <div class="resp"><div class="quem-c"><span class="av-c eu">M</span><b>Manassés</b><small>1 min</small></div><p>Com testes de usabilidade: taxa de sucesso e tempo das tarefas principais, comparando a primeira versão com a final.</p></div>
+          <div class="responder">Responder…<span>↵</span></div>
+        </div>
+      </div>
+      <div class="coment">
+        <div class="pin" style="--c:#FFC700">5</div>
+        <div class="balao">
+          <div class="quem-c"><span class="av-c" style="--c:#FFC700">R</span><b>Recrutador(a)</b><small>agora</small></div>
+          <p class="perg">Você usa IA no processo?</p>
+          <div class="resp"><div class="quem-c"><span class="av-c eu">M</span><b>Manassés</b><small>1 min</small></div><p>Uso pra pesquisar, explorar alternativas e prototipar mais rápido. A decisão final de design é sempre minha.</p></div>
+          <div class="responder">Responder…<span>↵</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL -->
+<section class="secao final" id="contato" data-secao="Contato">
+  <div class="container">
+    <div class="kicker" data-r>Disponível para novas oportunidades</div>
+    <h2 data-varre><span class="l"><span>Vamos desenhar</span></span><span class="l laranja"><span>algo juntos?</span></span></h2>
+    <p data-r style="--d:.2s">Tem uma vaga ou um projeto? Me conta o que você precisa e eu respondo rápido.</p>
+    <div class="acoes" data-r style="--d:.3s">
+      <button class="btn btn-laranja" data-email="manassesmarcelino@gmail.com"><span>Copiar e-mail</span> <svg><use href="#seta"/></svg></button>
+      <a class="btn btn-ghost" href="https://www.linkedin.com/in/manasses-marcelino-ux" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn btn-ghost" href="curriculo.pdf" target="_blank" rel="noopener">Currículo (PDF)</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="rodape">
+  <div class="container">
+    <div class="linha1">
+      <div class="rod-marca"><svg class="logo-mm grande" viewBox="0 0 210 210" aria-hidden="true"><path class="lg-pin" d="M0 105C0 47.0101 47.0101 0 105 0C162.99 0 210 47.0101 210 105C210 162.99 162.99 210 105 210H18C8.05887 210 0 201.941 0 192V105Z"/><path class="lg-mm" d="M33.072 143V74.46H46.872L72.54 108.5H66.1L91.032 74.46H104.832V143H90.572V90.192L96.276 91.48L69.872 125.52H68.032L42.548 91.48L47.332 90.192V143H33.072ZM108.706 143V74.46H122.506L148.174 108.5H141.734L166.666 74.46H180.466V143H166.206V90.192L171.91 91.48L145.506 125.52H143.666L118.182 91.48L122.966 90.192V143H108.706Z"/></svg><div><b>Manassés Marcelino</b><span class="pixel">UX/UI Designer</span></div></div>
+      <div class="redes"><span>Acompanhe</span><a href="https://www.linkedin.com/in/manasses-marcelino-ux" target="_blank" rel="noopener" aria-label="LinkedIn">in</a></div>
+      <div><small>Fale comigo</small><br><a class="mail" href="mailto:manassesmarcelino@gmail.com">manassesmarcelino@gmail.com</a></div>
+      <a href="#" class="subir" aria-label="Voltar ao topo"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 19V5M6 11l6-6 6 6"/></svg></a>
+    </div>
+    <div class="linha2"><span>© 2026 Manassés Marcelino</span><span>Florianópolis · SC</span></div>
+  </div>
+</footer>
+<script>/* site.js */
+// Portfólio v3 · animações e interações
 (function () {
-  var doc = document.documentElement;
-  var reduz = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  doc.classList.add('js');
+  var d = document.documentElement;
+  var reduz = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  d.classList.add('js');
 
-  // Nos cases, marca os blocos principais pra entrarem com animação
-  document.querySelectorAll(
-    '.case-hero .label, .case-hero h1, .case-hero .sub, .ficha, .capa-case, .premio, ' +
-    '.bloco .label, .bloco h2, .bloco .lead, .card, .metodo-card, .achado, .numero, ' +
-    '.citacao, .ouvimos .linha, .decisao, .case-img, .fluxo'
-  ).forEach(function (el) { el.classList.add('revela'); });
+  // ---- entrada ao rolar + "construção" (seleção do Figma passando em cada camada)
+  document.querySelectorAll('[data-varre]').forEach(function (h) {
+    h.querySelectorAll('.l>span').forEach(function (s, i) { s.style.setProperty('--d', (parseFloat(h.dataset.d || 0) + i * 0.09) + 's'); });
+  });
+  document.querySelectorAll('.acoes[data-r]').forEach(function (a) {
+    a.querySelectorAll('.btn').forEach(function (b, i) { b.style.setProperty('--i', (i * 0.08) + 's'); });
+  });
+  function monta(el) {
+    var alvos = el.matches('[data-camada]') ? [el] : [];
+    alvos = alvos.concat([].slice.call(el.querySelectorAll('[data-camada]')));
+    alvos.forEach(function (a, i) {
+      setTimeout(function () { a.classList.add('montando'); setTimeout(function () { a.classList.remove('montando'); }, 1050); }, 250 + i * 160);
+    });
+  }
+  function mostra(el) {
+    el.classList.add('visivel');
+    if (!reduz) monta(el);
+  }
+  window.__monta = monta;
+  var itens = document.querySelectorAll('[data-r],[data-varre]');
+  // na home, quem revela é a "construção" do figma.js
+  if (d.hasAttribute('data-construir') && !reduz) itens = [];
+  if (reduz || !('IntersectionObserver' in window)) itens.forEach(function (el) { el.classList.add('visivel'); });
+  else {
+    var io = new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { mostra(e.target); io.unobserve(e.target); } });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.1 });
+    itens.forEach(function (el) { io.observe(el); });
+  }
 
-  document.querySelectorAll('.grade, .metodos, .achados, .numeros, .resultados').forEach(function (g) {
-    Array.prototype.forEach.call(g.children, function (c, i) {
-      if (!c.style.getPropertyValue('--atraso')) c.style.setProperty('--atraso', (i * 0.07) + 's');
+  // ---- brilho seguindo o mouse nos cards
+  document.querySelectorAll('.caso,.cartao').forEach(function (c) {
+    c.addEventListener('pointermove', function (e) {
+      var r = c.getBoundingClientRect();
+      c.style.setProperty('--mx', (e.clientX - r.left) + 'px');
+      c.style.setProperty('--my', (e.clientY - r.top) + 'px');
     });
   });
 
-  var itens = document.querySelectorAll('.revela');
-  if (reduz || !('IntersectionObserver' in window)) {
-    itens.forEach(function (el) { el.classList.add('visivel'); });
-  } else {
-    var obs = new IntersectionObserver(function (entradas) {
-      entradas.forEach(function (e) {
-        if (e.isIntersecting) { e.target.classList.add('visivel'); obs.unobserve(e.target); }
-      });
-    }, { rootMargin: '0px 0px -6% 0px', threshold: 0.06 });
-    itens.forEach(function (el) { obs.observe(el); });
+  // ---- carrossel de projetos
+  var car = document.querySelector('[data-carrossel]');
+  if (car) {
+    var trilho = car.querySelector('.trilho-casos'), casos = car.querySelectorAll('.caso');
+    var cont = document.querySelector('[data-contador]'), atual = 0;
+    function vai(n) {
+      atual = (n + casos.length) % casos.length;
+      trilho.style.transform = 'translateX(' + (-100 * atual) + '%)';
+      casos.forEach(function (c, i) { c.classList.toggle('atual', i === atual); c.setAttribute('aria-hidden', i !== atual); });
+      if (cont) cont.innerHTML = (atual + 1) + '<i>•</i>' + casos.length;
+      if (!reduz) setTimeout(function () { monta(casos[atual]); }, 350);
+    }
+    document.querySelector('[data-ant]').addEventListener('click', function () { vai(atual - 1); });
+    document.querySelector('[data-prox]').addEventListener('click', function () { vai(atual + 1); });
+    car.addEventListener('keydown', function (e) { if (e.key === 'ArrowRight') vai(atual + 1); if (e.key === 'ArrowLeft') vai(atual - 1); });
+    var x0 = null;
+    car.addEventListener('pointerdown', function (e) { x0 = e.clientX; });
+    car.addEventListener('pointerup', function (e) { if (x0 === null) return; var dx = e.clientX - x0; if (Math.abs(dx) > 60) vai(atual + (dx < 0 ? 1 : -1)); x0 = null; });
+    vai(0);
   }
 
-  // Linha embaixo do topo depois de rolar
-  var topo = document.querySelector('.topo-site');
-  function aoRolar() { if (topo) topo.classList.toggle('rolou', window.scrollY > 10); }
-  window.addEventListener('scroll', aoRolar, { passive: true });
-  aoRolar();
+  // ---- temas da trajetória (um aberto por vez)
+  var temas = document.querySelectorAll('.tema');
+  temas.forEach(function (t) {
+    t.querySelector('.tema-cab').addEventListener('click', function () {
+      var abrir = !t.classList.contains('aberto');
+      temas.forEach(function (o) { o.classList.remove('aberto'); o.querySelector('.tema-cab').setAttribute('aria-expanded', 'false'); });
+      if (abrir) { t.classList.add('aberto'); t.querySelector('.tema-cab').setAttribute('aria-expanded', 'true'); }
+    });
+  });
 
-  // Link ativo no menu
-  var links = document.querySelectorAll('.menu a[href^="#"]');
+  // ---- FAQ: setas
+  var faq = document.querySelector('.faq-trilho');
+  if (faq) {
+    var fc = document.querySelector('[data-faq-cont]');
+    function passoFaq() { return faq.firstElementChild.offsetWidth + 16; }
+    function atualiza() { if (!fc) return; var i = Math.round(faq.scrollLeft / passoFaq()) + 1; fc.innerHTML = Math.min(i, faq.children.length) + '<i>•</i>' + faq.children.length; }
+    document.querySelector('[data-faq-ant]').addEventListener('click', function () { faq.scrollBy({ left: -passoFaq(), behavior: 'smooth' }); });
+    document.querySelector('[data-faq-prox]').addEventListener('click', function () { faq.scrollBy({ left: passoFaq(), behavior: 'smooth' }); });
+    faq.addEventListener('scroll', atualiza, { passive: true }); atualiza();
+  }
+
+  // ---- crachá: puxe a bolinha para a direita
+  var cr = document.querySelector('.cracha');
+  if (cr) {
+    var pux = cr.querySelector('.puxador'), corte = cr.querySelector('.corte'), arr = false, ini = 0;
+    pux.addEventListener('pointerdown', function (e) { arr = true; ini = e.clientX; pux.setPointerCapture(e.pointerId); pux.style.animation = 'none'; });
+    pux.addEventListener('pointermove', function (e) {
+      if (!arr) return;
+      var max = corte.offsetWidth, dx = Math.max(0, Math.min(max, e.clientX - ini));
+      pux.style.transform = 'translateX(' + dx + 'px)';
+      if (dx > max * 0.85) { arr = false; solta(); }
+    });
+    pux.addEventListener('pointerup', function () { if (arr) { arr = false; pux.style.transition = 'transform .4s cubic-bezier(.34,1.56,.64,1)'; pux.style.transform = ''; setTimeout(function () { pux.style.transition = ''; }, 400); } });
+    pux.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); solta(); } });
+    function solta() {
+      cr.classList.add('solto'); pux.style.opacity = '0';
+      setTimeout(function () { document.getElementById('contato').scrollIntoView({ behavior: reduz ? 'auto' : 'smooth' }); }, 1200);
+    }
+  }
+
+  // ---- copiar e-mail
+  document.querySelectorAll('[data-email]').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var e = b.dataset.email, t = b.querySelector('span') || b, antes = t.textContent;
+      if (navigator.clipboard) navigator.clipboard.writeText(e).then(function () { t.textContent = 'E-mail copiado!'; setTimeout(function () { t.textContent = antes; }, 1800); });
+      else location.href = 'mailto:' + e;
+    });
+  });
+
+  // ---- números contando (cases)
+  if (!reduz && 'IntersectionObserver' in window) {
+    var io2 = new IntersectionObserver(function (es) {
+      es.forEach(function (e) {
+        if (!e.isIntersecting) return; io2.unobserve(e.target);
+        var el = e.target, m = el.textContent.match(/^(\D*)(\d+)(.*)$/s); if (!m) return;
+        var fim = +m[2], t0 = null;
+        (function passo(t) { if (!t0) t0 = t; var p = Math.min((t - t0) / 1200, 1); el.textContent = m[1] + Math.round(fim * (1 - Math.pow(1 - p, 3))) + m[3]; if (p < 1) requestAnimationFrame(passo); })(performance.now());
+      });
+    }, { threshold: 0.5 });
+    document.querySelectorAll('.achado strong,.numero strong,[data-conta]').forEach(function (n) { io2.observe(n); });
+  }
+
+  // ---- índice do case: abre o "ver mais detalhes" se a seção estiver dentro dele
+  document.querySelectorAll('.indice a').forEach(function (a) {
+    var alvo = document.getElementById(a.getAttribute('href').slice(1));
+    var det = alvo && alvo.closest('details');
+    if (!det) return;
+    a.classList.add('oculto');
+    a.addEventListener('click', function () { det.open = true; });
+  });
+
+  // ---- progresso e menu/índice ativo
+  var prog = document.querySelector('.progresso');
+  function rola() { if (prog) { var h = d.scrollHeight - innerHeight; prog.style.setProperty('--p', h > 0 ? scrollY / h : 0); } }
+  addEventListener('scroll', rola, { passive: true }); rola();
+  var links = document.querySelectorAll('.menu a[href^="#"], .indice a');
   if (links.length && 'IntersectionObserver' in window) {
     var mapa = {};
     links.forEach(function (a) { mapa[a.getAttribute('href').slice(1)] = a; });
-    var obsSec = new IntersectionObserver(function (entradas) {
-      entradas.forEach(function (e) {
+    var io3 = new IntersectionObserver(function (es) {
+      es.forEach(function (e) {
         if (e.isIntersecting && mapa[e.target.id]) {
-          links.forEach(function (a) { a.classList.remove('ativo'); });
+          var grupo = mapa[e.target.id].parentNode.querySelectorAll('a');
+          grupo.forEach(function (a) { a.classList.remove('ativo'); });
           mapa[e.target.id].classList.add('ativo');
         }
       });
-    }, { rootMargin: '-45% 0px -50% 0px' });
-    Object.keys(mapa).forEach(function (id) { var s = document.getElementById(id); if (s) obsSec.observe(s); });
-  }
-
-  // Prévia da tela seguindo o cursor na lista de projetos
-  var pv = document.querySelector('.preview');
-  if (pv && window.matchMedia('(hover: hover) and (min-width: 861px)').matches) {
-    var img = pv.querySelector('img');
-    document.querySelectorAll('.projeto-item').forEach(function (it) {
-      it.addEventListener('mouseenter', function () { img.src = it.getAttribute('data-img'); pv.classList.add('on'); });
-      it.addEventListener('mouseleave', function () { pv.classList.remove('on'); });
-    });
-    window.addEventListener('pointermove', function (e) {
-      pv.style.left = Math.min(e.clientX + 260, window.innerWidth - 240) + 'px';
-      pv.style.top = e.clientY + 'px';
-    });
+    }, { rootMargin: '-40% 0px -55% 0px' });
+    Object.keys(mapa).forEach(function (id) { var s = document.getElementById(id); if (s) io3.observe(s); });
   }
 })();
 
 </script>
-<script>
-document.querySelectorAll(".copiar-email").forEach(function(b){b.addEventListener("click",function(){var e=b.getAttribute("data-email");var ok=function(){var s=b.querySelector(".acao");s.textContent="Copiado!";b.classList.add("ok");setTimeout(function(){s.textContent="Copiar";b.classList.remove("ok");},2000);};if(navigator.clipboard){navigator.clipboard.writeText(e).then(ok,function(){location.href="mailto:"+e;});}else{location.href="mailto:"+e;}});});
+<script>/* figma.js */
+// Interações com cara de Figma
+(function () {
+  var reduz = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // ---- frame da foto: arraste as alças pra redimensionar
+  var ff = document.getElementById('ff');
+  if (ff) {
+    var palco = ff.parentNode, tam = ff.querySelector('[data-tam]');
+    var oW = document.querySelector('[data-w]'), oA = document.querySelector('[data-a]');
+    var st = { x: 0, y: 34, w: 320, h: 380 };
+    function aplica() {
+      ff.style.setProperty('--x', st.x + 'px'); ff.style.setProperty('--y', st.y + 'px');
+      ff.style.setProperty('--w', st.w + 'px'); ff.style.setProperty('--h', st.h + 'px');
+      var t = Math.round(st.w) + ' × ' + Math.round(st.h);
+      tam.textContent = t; oW.textContent = Math.round(st.w); oA.textContent = Math.round(st.h);
+    }
+    function lim() {
+      var maxW = palco.clientWidth || 460, maxH = 520;
+      if (getComputedStyle(ff).position !== 'absolute') { maxW = Math.min(palco.clientWidth, 420); st.x = 0; st.y = 0; }
+      st.w = Math.max(160, Math.min(st.w, maxW - st.x));
+      st.h = Math.max(180, Math.min(st.h, maxH - st.y));
+      st.x = Math.max(0, st.x); st.y = Math.max(0, st.y);
+    }
+    lim(); aplica();
+    ff.querySelectorAll('.h').forEach(function (al) {
+      al.addEventListener('pointerdown', function (e) {
+        e.preventDefault(); al.setPointerCapture(e.pointerId); ff.classList.add('mexeu');
+        var dir = al.dataset.h, x0 = e.clientX, y0 = e.clientY, s0 = { x: st.x, y: st.y, w: st.w, h: st.h };
+        function move(ev) {
+          var dx = ev.clientX - x0, dy = ev.clientY - y0;
+          if (dir.indexOf('e') > -1) st.w = s0.w + dx;
+          if (dir.indexOf('s') > -1) st.h = s0.h + dy;
+          if (dir.indexOf('w') > -1) { var nw = Math.max(160, s0.w - dx); st.x = s0.x + (s0.w - nw); st.w = nw; }
+          if (dir.indexOf('n') > -1) { var nh = Math.max(180, s0.h - dy); st.y = s0.y + (s0.h - nh); st.h = nh; }
+          lim(); aplica();
+        }
+        function solta() { al.removeEventListener('pointermove', move); al.removeEventListener('pointerup', solta); }
+        al.addEventListener('pointermove', move); al.addEventListener('pointerup', solta);
+      });
+    });
+    addEventListener('resize', function () { lim(); aplica(); });
+
+    // painel de design
+    var raio = document.querySelector('[data-raio]'), raioV = document.querySelector('[data-raio-v]');
+    raio.addEventListener('input', function () { ff.style.setProperty('--raio', raio.value + 'px'); raioV.textContent = raio.value; });
+    document.querySelectorAll('[data-cor]').forEach(function (b) {
+      b.addEventListener('click', function () {
+        document.querySelectorAll('[data-cor]').forEach(function (o) { o.classList.remove('on'); });
+        b.classList.add('on');
+        document.documentElement.style.setProperty('--laranja', b.dataset.cor);
+        document.documentElement.style.setProperty('--laranja-2', b.dataset.cor);
+      });
+    });
+    var pb = document.querySelector('[data-pb]');
+    pb.addEventListener('change', function () { ff.style.setProperty('--pb', pb.checked ? 'grayscale(1)' : 'none'); });
+  }
+
+  // ---- linhas de conexão do protótipo
+  document.querySelectorAll('.noodle path:not(.ponta)').forEach(function (p) { p.setAttribute('pathLength', '1'); });
+  var cabs = document.querySelectorAll('.cab');
+  if (reduz || !('IntersectionObserver' in window)) cabs.forEach(function (c) { c.classList.add('ligado'); });
+  else {
+    var io = new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('ligado'); io.unobserve(e.target); } }); }, { threshold: 0.4 });
+    cabs.forEach(function (c) { io.observe(c); });
+  }
+
+  // ---- painel de interação mostrando o "protótipo" de cada seção
+  var proto = document.querySelector('.proto'), nome = proto && proto.querySelector('[data-p-sec]'), tm;
+  if (proto && !reduz && 'IntersectionObserver' in window) {
+    var vistos = {};
+    var io2 = new IntersectionObserver(function (es) {
+      es.forEach(function (e) {
+        var s = e.target.dataset.secao;
+        if (!e.isIntersecting || vistos[s]) return;
+        vistos[s] = 1; nome.textContent = s; proto.classList.add('on');
+        clearTimeout(tm); tm = setTimeout(function () { proto.classList.remove('on'); }, 2400);
+      });
+    }, { threshold: 0.2 });
+    document.querySelectorAll('[data-secao]').forEach(function (s) { io2.observe(s); });
+  }
+})();
+
+</script>
+<script>/* construir.js */
+// Home: cada seção abre como um frame do Figma e nasce em wireframe
+(function () {
+  var d = document.documentElement;
+  var reduz = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var finoPonteiro = matchMedia('(hover: hover) and (pointer: fine)').matches;
+  if (!d.hasAttribute('data-construir')) return;
+
+  var esperar = function (ms) { return new Promise(function (r) { setTimeout(r, ms); }); };
+  var el = function (tag, cls, css) { var n = document.createElement(tag); n.className = cls; if (css) n.style.cssText = css; return n; };
+
+  // ---------- cursor "Manassés" que constrói ----------
+  var cur = el('div', 'cv-cursor');
+  cur.innerHTML = '<svg viewBox="0 0 16 16"><path d="M1 1l5.5 13 2-5.5L14 6.5z"/></svg><b>Manassés</b>';
+  document.body.appendChild(cur);
+  var pos = { x: innerWidth * 0.6, y: scrollY + innerHeight * 0.4 }, someTm;
+  cur.style.transform = 'translate(' + pos.x + 'px,' + pos.y + 'px)';
+  function voa(x, y, ms) {
+    cur.classList.add('on'); clearTimeout(someTm);
+    var a = cur.animate([{ transform: 'translate(' + pos.x + 'px,' + pos.y + 'px)' }, { transform: 'translate(' + x + 'px,' + y + 'px)' }],
+      { duration: ms || 380, easing: 'cubic-bezier(.65,0,.35,1)', fill: 'forwards' });
+    pos = { x: x, y: y };
+    someTm = setTimeout(function () { cur.classList.remove('on'); }, 1600);
+    return esperar(ms || 380);
+  }
+
+  // ---------- esqueletos ----------
+  function caixaRel(n, root) {
+    var r = n.getBoundingClientRect(), b = root.getBoundingClientRect();
+    return { l: r.left - b.left, t: r.top - b.top, w: r.width, h: r.height };
+  }
+  function pos4(c) { return 'left:' + c.l + 'px;top:' + c.t + 'px;width:' + c.w + 'px;height:' + c.h + 'px'; }
+  var IMG = '<svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="2"/><path d="M3 18l6-6 4 4 3-3 5 5"/></svg>';
+  function placeholderImg(c) { var p = el('span', 'cv-img', pos4(c)); p.innerHTML = '<i></i>' + IMG; return p; }
+  function barras(alvo, root, camada) {
+    var c = caixaRel(alvo, root), cs = getComputedStyle(alvo);
+    var fs = parseFloat(cs.fontSize) || 16, lh = parseFloat(cs.lineHeight) || fs * 1.3;
+    var n = Math.max(1, Math.min(4, Math.round(c.h / lh))), alt = Math.max(5, Math.min(22, fs * 0.46));
+    var w = c.w;
+    if (n === 1) { var rg = document.createRange(); rg.selectNodeContents(alvo); var rr = rg.getBoundingClientRect(); if (rr.width > 0) w = Math.min(c.w, rr.width); }
+    var larg = n === 1 ? [1] : [1, .93, .97, .62].slice(0, n);
+    if (n > 1) larg[n - 1] = .6;
+    larg.forEach(function (f, i) {
+      var top = c.t + i * lh + (lh - alt) / 2;
+      camada.appendChild(el('span', 'cv-linha', 'left:' + c.l + 'px;top:' + top + 'px;width:' + (w * f) + 'px;height:' + alt + 'px;--i:' + i));
+    });
+  }
+  function cartao(alvo, root, camada, comImg) {
+    var c = caixaRel(alvo, root), raio = getComputedStyle(alvo).borderRadius;
+    var box = el('span', 'cv-card', pos4(c) + ';border-radius:' + raio);
+    camada.appendChild(box);
+    var pad = Math.min(36, c.w * 0.06), larguraTexto = comImg ? c.w * 0.42 : c.w - pad * 2;
+    [0.35, 0.9, 0.8, 0.55].forEach(function (f, i) {
+      if (c.h < 120 && i > 1) return;
+      camada.appendChild(el('span', 'cv-linha', 'left:' + (c.l + pad) + 'px;top:' + (c.t + pad + i * 30 + (i ? 14 : 0)) + 'px;width:' + (larguraTexto * f) + 'px;height:' + (i === 1 ? 20 : 10) + 'px;--i:' + i));
+    });
+    if (comImg) camada.appendChild(placeholderImg({ l: c.l + c.w * 0.52, t: c.t + pad, w: c.w * 0.48 - pad, h: Math.min(c.h - pad * 2, c.w * 0.3) }));
+  }
+  function esqueleto(alvo, root, camada) {
+    var temImg = alvo.querySelector('.janela-f,.ff-img');
+    if (alvo.matches('.acoes')) { alvo.querySelectorAll('.btn').forEach(function (b) { var c = caixaRel(b, root); var p = el('span', 'cv-botao', pos4(c)); p.appendChild(el('span', 'cv-linha', 'left:24%;right:24%;top:calc(50% - 4px);height:8px;position:absolute')); camada.appendChild(p); }); return; }
+    if (alvo.matches('.palco')) {
+      camada.appendChild(placeholderImg(caixaRel(alvo.querySelector('.frame-foto'), root)));
+      var ins = alvo.querySelector('.inspetor'); if (ins) cartao(ins, root, camada, false); return;
+    }
+    if (alvo.matches('.faq-trilho,.trilho')) {
+      [].slice.call(alvo.children).forEach(function (ch) { var c = caixaRel(ch, root); if (c.l < root.clientWidth) camada.appendChild(el('span', 'cv-card', pos4(c) + ';border-radius:14px')); }); return;
+    }
+    if (alvo.matches('.controles')) { alvo.querySelectorAll('.seta-btn').forEach(function (b) { camada.appendChild(el('span', 'cv-botao', pos4(caixaRel(b, root)) + ';border-radius:50%')); }); return; }
+    if (alvo.matches('.caso,.carrossel,.cartao,.temas,.coment,.inspetor,.caixa,.ajuda>*,.visual-case,.bento>*') || alvo.offsetHeight > 220) { cartao(alvo, root, camada, !!temImg); return; }
+    barras(alvo, root, camada);
+  }
+
+  // ---------- construir uma seção ----------
+  function nomeDe(root) { return root.dataset.secao || (root.classList.contains('hero') ? 'Início' : root.classList.contains('assets') ? 'Assets' : 'Seção'); }
+  async function constroi(root) {
+    if (root.__feito) return; root.__feito = true;
+    var alvos = [].slice.call(root.querySelectorAll('[data-r],[data-varre]'));
+    if (getComputedStyle(root).position === 'static') root.style.position = 'relative';
+    var cont = root.querySelector('.container') || root;
+    var fc = caixaRel(cont, root);
+    var frame = el('div', 'cv-frame', pos4({ l: fc.l + 4, t: Math.max(fc.t, 8), w: fc.w - 8, h: Math.min(fc.h, root.offsetHeight - 16) }));
+    frame.innerHTML = '<span class="cv-frame-nome"><svg viewBox="0 0 12 12"><path d="M3 0v12M9 0v12M0 3h12M0 9h12"/></svg>Frame · ' + nomeDe(root) + '</span><span class="cv-frame-tam">' + Math.round(fc.w) + ' × ' + Math.round(fc.h) + '</span>';
+    var camada = el('div', 'cv-camada');
+    root.appendChild(camada); root.appendChild(frame);
+    // 1) desenha o frame (ferramenta Frame)
+    var b = root.getBoundingClientRect();
+    voa(b.left + scrollX + fc.l + 4, b.top + scrollY + Math.max(fc.t, 8), 420);
+    frame.animate([{ clipPath: 'inset(0 100% 100% 0)' }, { clipPath: 'inset(0 0 0 0)' }], { duration: 520, easing: 'cubic-bezier(0,0,.2,1)', fill: 'forwards' }); await esperar(540);
+    // 2) wireframe -> tela final, peça por peça
+    var promessas = alvos.map(function (a, i) {
+      return esperar(i * 120).then(function () {
+        var sub = el('div', 'cv-grupo'); camada.appendChild(sub);
+        esqueleto(a, root, sub);
+        var r = a.getBoundingClientRect();
+        if (i % 2 === 0 || alvos.length < 5) voa(r.left + scrollX + Math.min(r.width * 0.5, 160), r.top + scrollY + Math.min(r.height * 0.5, 60), 360);
+        return esperar(420).then(function () {
+          a.classList.add('visivel');
+          if (window.__monta) window.__monta(a);
+          if (a.matches('[data-camada]') || a.querySelector('[data-camada]')) {}
+          sub.classList.add('saindo');
+          return esperar(320).then(function () { sub.remove(); });
+        });
+      });
+    });
+    await Promise.all(promessas);
+    frame.classList.add('saindo');
+    await esperar(450); frame.remove(); camada.remove();
+  }
+
+  var raizes = [].slice.call(document.querySelectorAll('.hero, .assets, section.secao'));
+  if (reduz || !('IntersectionObserver' in window)) {
+    document.querySelectorAll('[data-r],[data-varre]').forEach(function (a) { a.classList.add('visivel'); });
+  } else {
+    var io = new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { io.unobserve(e.target); constroi(e.target); } });
+    }, { threshold: 0.12, rootMargin: '0px 0px -10% 0px' });
+    // espera as fontes pra medir certo
+    (document.fonts ? document.fonts.ready : Promise.resolve()).then(function () { raizes.forEach(function (r) { io.observe(r); }); });
+  }
+
+  // ---------- seleção retangular (marquee) ----------
+  if (finoPonteiro && !reduz) {
+    // ---------- seleção retangular (marquee) arrastando no fundo ----------
+    var fundo = 'body, main, section, .container, .hero, .grade-fundo, .cab, .bento, .traj, .ajuda, .final';
+    var mq = null, ini = null;
+    addEventListener('pointerdown', function (e) {
+      if (e.button !== 0 || e.pointerType !== 'mouse' || !e.target.matches(fundo)) return;
+      ini = { x: e.clientX, y: e.clientY };
+      mq = el('div', 'cv-marquee'); mq.innerHTML = '<span></span>'; document.body.appendChild(mq);
+      d.classList.add('sem-selecao');
+    });
+    addEventListener('pointermove', function (e) {
+      if (!mq) return;
+      var x = Math.min(ini.x, e.clientX), y = Math.min(ini.y, e.clientY), w = Math.abs(e.clientX - ini.x), h = Math.abs(e.clientY - ini.y);
+      mq.style.cssText = 'left:' + x + 'px;top:' + y + 'px;width:' + w + 'px;height:' + h + 'px';
+      mq.firstChild.textContent = Math.round(w) + ' × ' + Math.round(h);
+    });
+    addEventListener('pointerup', function () {
+      if (!mq) return; var m = mq; mq = null; d.classList.remove('sem-selecao');
+      m.classList.add('saindo'); setTimeout(function () { m.remove(); }, 300);
+    });
+  }
+})();
+
 </script>
 </body>
 </html>
